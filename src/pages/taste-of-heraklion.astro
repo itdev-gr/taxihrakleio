@@ -1,0 +1,340 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Taste of Heraklion Tour | LP Taxi Heraklion">
+  <!-- Page Header -->
+  <section class="relative pt-32 pb-20 bg-navy overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-gold rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.header.tag">Food & Wine Experience</span>
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-3 mb-6" data-i18n="taste.header.title">Taste of Heraklion</h1>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto" data-i18n="taste.header.subtitle">
+        A unique culinary journey through the Cretan countryside. Discover authentic flavors, ancient wineries, and traditional villages.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tour Carousel -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.carousel.tag">The Experience</span>
+        <h2 class="font-display text-4xl sm:text-5xl font-bold text-navy mt-3 mb-6" data-i18n="taste.carousel.title">Explore the Highlights</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <!-- Image with arrows -->
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-navy to-navy-light">
+            <img id="carousel-img" src="/images/knossos.avif" alt="" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500" />
+          </div>
+
+          <!-- Left Arrow -->
+          <button id="carousel-prev" class="absolute left-3 top-1/2 -translate-y-1/2 w-12 h-12 bg-navy/70 hover:bg-navy rounded-full flex items-center justify-center text-white backdrop-blur-sm transition-all shadow-lg">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          <!-- Right Arrow -->
+          <button id="carousel-next" class="absolute right-3 top-1/2 -translate-y-1/2 w-12 h-12 bg-navy/70 hover:bg-navy rounded-full flex items-center justify-center text-white backdrop-blur-sm transition-all shadow-lg">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+
+          <!-- Dots -->
+          <div class="flex justify-center gap-2 mt-6" id="carousel-dots"></div>
+        </div>
+
+        <!-- Text content -->
+        <div>
+          <span id="carousel-tag" class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.knossos.tag">Historical Excursion</span>
+          <h2 id="carousel-title" class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="taste.knossos.title">Knossos Palace</h2>
+          <p id="carousel-text1" class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="taste.knossos.text1"></p>
+          <p id="carousel-text2" class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.knossos.text2"></p>
+
+          <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+            Book This Tour
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Knossos Palace -->
+  <section class="py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.knossos.tag">Historical Excursion</span>
+          <h2 class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="taste.knossos.title">Knossos Palace</h2>
+          <p class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="taste.knossos.text1">
+            Step back in time and explore the legendary Palace of Knossos, the heart of the ancient Minoan civilization and Europe's oldest city. This magnificent archaeological site, dating back over 4,000 years, was once the ceremonial and political center of the Minoan empire.
+          </p>
+          <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.knossos.text2">
+            Walk through the grand halls where King Minos once ruled, marvel at the vivid frescoes that have survived millennia, and discover the mythical labyrinth said to have housed the Minotaur. Our knowledgeable drivers will take you on a comfortable ride to this UNESCO-recognized site, just a short drive from Heraklion city center.
+          </p>
+          <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+            Book This Tour
+          </a>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-navy to-navy-light">
+            <div class="absolute inset-0 bg-[url('/images/knossos.avif')] bg-cover bg-center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Morosini Fountain -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-navy to-navy-light">
+            <div class="absolute inset-0 bg-[url('/images/Morozini_Fontein_Heraklion_edited.avif')] bg-cover bg-center"></div>
+          </div>
+        </div>
+        <div>
+          <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.morosini.tag">Venetian Heritage</span>
+          <h2 class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="taste.morosini.title">Morosini Fountain</h2>
+          <p class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="taste.morosini.text1">
+            Standing proudly at the heart of Heraklion's Lions Square, the Morosini Fountain is one of the city's most iconic landmarks. Built in 1628 by the Venetian governor Francesco Morosini, this elegant fountain has been the social center of the city for nearly four centuries.
+          </p>
+          <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.morosini.text2">
+            Adorned with intricate reliefs depicting figures from Greek mythology and crowned by four majestic lions, the fountain is a masterpiece of Venetian craftsmanship. Surrounded by cafes and bustling streets, it's the perfect starting point to explore the vibrant old town of Heraklion. Let us take you there in comfort and style.
+          </p>
+          <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+            Book This Tour
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bembo Fountain -->
+  <section class="py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.bembo.tag">Historical Landmark</span>
+          <h2 class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="taste.bembo.title">Bembo Fountain</h2>
+          <p class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="taste.bembo.text1">
+            The Bembo Fountain, located in Kornarou Square, is the oldest fountain in Heraklion and one of the finest examples of Venetian architecture on the island. Built in 1588 by the Venetian governor Gianmatteo Bembo, it was the first fountain to bring running water to the city.
+          </p>
+          <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.bembo.text2">
+            The fountain features a striking headless Roman statue and ornate carved details that reflect the grandeur of Venetian rule in Crete. Nestled in one of Heraklion's most charming squares alongside the Ottoman-era Kiosk, it offers a beautiful blend of the city's rich multicultural history. A must-see stop on any tour of the old town.
+          </p>
+          <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+            Book This Tour
+          </a>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-navy to-navy-light">
+            <div class="absolute inset-0 bg-[url('/images/LRM_EXPORT_19584388799415_20190127_204940514_edited.avif')] bg-cover bg-center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Priouli Fountain -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-navy to-navy-light">
+            <div class="absolute inset-0 bg-[url('/images/Priuli_fountain_at_Heraklion_edited.avif')] bg-cover bg-center"></div>
+          </div>
+        </div>
+        <div>
+          <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.priouli.tag">Venetian Treasure</span>
+          <h2 class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="taste.priouli.title">Priouli Fountain</h2>
+          <p class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="taste.priouli.text1">
+            Tucked away in a quiet corner of Heraklion's old town, the Priouli Fountain is a hidden gem of Venetian craftsmanship. Built in 1666 by Antonio Priuli, one of the last Venetian governors of Crete, this charming fountain stands as a testament to the island's rich Renaissance heritage.
+          </p>
+          <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.priouli.text2">
+            With its elegant stone carvings and peaceful atmosphere, the Priouli Fountain offers a tranquil escape from the bustling city streets. It's a beautiful reminder of Heraklion's layered history, where Venetian, Ottoman, and Greek cultures have left their mark over the centuries. Let us guide you through these timeless landmarks.
+          </p>
+          <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+            Book This Tour
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Tomb of Nikos Kazantzakis -->
+  <section class="py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.kazantzakis.tag">Literary Heritage</span>
+          <h2 class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="taste.kazantzakis.title">The Tomb of Nikos Kazantzakis</h2>
+          <p class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="taste.kazantzakis.text1">
+            Perched atop the Martinengo Bastion on the old Venetian walls of Heraklion, the tomb of Nikos Kazantzakis commands a breathtaking panoramic view of the city and the sea. Greece's most celebrated author, known worldwide for "Zorba the Greek" and "The Last Temptation of Christ," chose this powerful location as his final resting place.
+          </p>
+          <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.kazantzakis.text2">
+            His epitaph, carved in stone, reads: "I hope for nothing. I fear nothing. I am free." These words capture the spirit of the man and the island that inspired him. A visit to this serene and moving site offers a moment of reflection and one of the most stunning views in all of Heraklion — a truly unforgettable stop on any tour.
+          </p>
+          <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+            Book This Tour
+          </a>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-navy to-navy-light">
+            <div class="absolute inset-0 bg-[url('/images/nikos_kazatzakis_tomb.avif')] bg-cover bg-center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Church of Saint Titos -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-navy to-navy-light">
+            <div class="absolute inset-0 bg-[url('/images/agios_titos_edited.avif')] bg-cover bg-center"></div>
+          </div>
+        </div>
+        <div>
+          <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.titos.tag">Sacred Heritage</span>
+          <h2 class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="taste.titos.title">The Church of Saint Titos</h2>
+          <p class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="taste.titos.text1">
+            The Church of Saint Titos, standing majestically in the heart of Heraklion, is one of the most important religious and historical monuments on the island. Dedicated to the patron saint of Crete, Saint Titos was a disciple of the Apostle Paul and the first bishop of the island.
+          </p>
+          <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.titos.text2">
+            Originally built in the 10th century during the Byzantine era, the church has been transformed through centuries of Venetian and Ottoman rule, giving it a unique architectural character. Inside, it houses the sacred relic of the skull of Saint Titos, returned to Crete in 1966 after centuries in Venice. A visit here is a journey through faith, history, and the enduring spirit of Crete.
+          </p>
+          <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+            Book This Tour
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-gold">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-6" data-i18n="taste.cta.title">Ready to Taste Crete?</h2>
+      <p class="text-navy/70 text-lg mb-8" data-i18n="taste.cta.subtitle">Book the Taste of Heraklion tour and discover authentic Cretan flavors.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-8 py-4 rounded-xl transition-all text-lg">
+          <span data-i18n="taste.cta.bookBtn">Book This Tour</span>
+        </a>
+        <a href="tel:+306943551122" class="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 text-navy font-semibold px-8 py-4 rounded-xl transition-all text-lg border-2 border-navy/20">
+          <span data-i18n="taste.cta.callBtn">Call for Details</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  const tours = [
+    {
+      image: '/images/knossos.avif',
+      tag: 'Historical Excursion',
+      title: 'Knossos Palace',
+      text1: 'Step back in time and explore the legendary Palace of Knossos, the heart of the ancient Minoan civilization and Europe\'s oldest city. This magnificent archaeological site, dating back over 4,000 years, was once the ceremonial and political center of the Minoan empire.',
+      text2: 'Walk through the grand halls where King Minos once ruled, marvel at the vivid frescoes that have survived millennia, and discover the mythical labyrinth said to have housed the Minotaur. Our knowledgeable drivers will take you on a comfortable ride to this UNESCO-recognized site, just a short drive from Heraklion city center.',
+    },
+    {
+      image: '/images/Morozini_Fontein_Heraklion_edited.avif',
+      tag: 'Venetian Heritage',
+      title: 'Morosini Fountain',
+      text1: 'Standing proudly at the heart of Heraklion\'s Lions Square, the Morosini Fountain is one of the city\'s most iconic landmarks. Built in 1628 by the Venetian governor Francesco Morosini, this elegant fountain has been the social center of the city for nearly four centuries.',
+      text2: 'Adorned with intricate reliefs depicting figures from Greek mythology and crowned by four majestic lions, the fountain is a masterpiece of Venetian craftsmanship. Surrounded by cafes and bustling streets, it\'s the perfect starting point to explore the vibrant old town of Heraklion.',
+    },
+    {
+      image: '/images/LRM_EXPORT_19584388799415_20190127_204940514_edited.avif',
+      tag: 'Historical Landmark',
+      title: 'Bembo Fountain',
+      text1: 'The Bembo Fountain, located in Kornarou Square, is the oldest fountain in Heraklion and one of the finest examples of Venetian architecture on the island. Built in 1588 by the Venetian governor Gianmatteo Bembo, it was the first fountain to bring running water to the city.',
+      text2: 'The fountain features a striking headless Roman statue and ornate carved details that reflect the grandeur of Venetian rule in Crete. Nestled in one of Heraklion\'s most charming squares alongside the Ottoman-era Kiosk, it offers a beautiful blend of the city\'s rich multicultural history.',
+    },
+    {
+      image: '/images/Priuli_fountain_at_Heraklion_edited.avif',
+      tag: 'Venetian Treasure',
+      title: 'Priouli Fountain',
+      text1: 'Tucked away in a quiet corner of Heraklion\'s old town, the Priouli Fountain is a hidden gem of Venetian craftsmanship. Built in 1666 by Antonio Priuli, one of the last Venetian governors of Crete, this charming fountain stands as a testament to the island\'s rich Renaissance heritage.',
+      text2: 'With its elegant stone carvings and peaceful atmosphere, the Priouli Fountain offers a tranquil escape from the bustling city streets. It\'s a beautiful reminder of Heraklion\'s layered history, where Venetian, Ottoman, and Greek cultures have left their mark over the centuries.',
+    },
+    {
+      image: '/images/nikos_kazatzakis_tomb.avif',
+      tag: 'Literary Heritage',
+      title: 'The Tomb of Nikos Kazantzakis',
+      text1: 'Perched atop the Martinengo Bastion on the old Venetian walls of Heraklion, the tomb of Nikos Kazantzakis commands a breathtaking panoramic view of the city and the sea. Greece\'s most celebrated author, known worldwide for "Zorba the Greek" and "The Last Temptation of Christ," chose this powerful location as his final resting place.',
+      text2: 'His epitaph, carved in stone, reads: "I hope for nothing. I fear nothing. I am free." These words capture the spirit of the man and the island that inspired him. A visit to this serene and moving site offers a moment of reflection and one of the most stunning views in all of Heraklion.',
+    },
+    {
+      image: '/images/agios_titos_edited.avif',
+      tag: 'Sacred Heritage',
+      title: 'The Church of Saint Titos',
+      text1: 'The Church of Saint Titos, standing majestically in the heart of Heraklion, is one of the most important religious and historical monuments on the island. Dedicated to the patron saint of Crete, Saint Titos was a disciple of the Apostle Paul and the first bishop of the island.',
+      text2: 'Originally built in the 10th century during the Byzantine era, the church has been transformed through centuries of Venetian and Ottoman rule, giving it a unique architectural character. Inside, it houses the sacred relic of the skull of Saint Titos, returned to Crete in 1966 after centuries in Venice.',
+    },
+  ];
+
+  let current = 0;
+
+  const img = document.getElementById('carousel-img') as HTMLImageElement;
+  const tag = document.getElementById('carousel-tag')!;
+  const title = document.getElementById('carousel-title')!;
+  const text1 = document.getElementById('carousel-text1')!;
+  const text2 = document.getElementById('carousel-text2')!;
+  const dotsContainer = document.getElementById('carousel-dots')!;
+  const prevBtn = document.getElementById('carousel-prev')!;
+  const nextBtn = document.getElementById('carousel-next')!;
+
+  function buildDots() {
+    dotsContainer.innerHTML = '';
+    tours.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = `w-3 h-3 rounded-full transition-all ${i === current ? 'bg-gold w-8' : 'bg-gray-300 hover:bg-gray-400'}`;
+      dot.addEventListener('click', () => goTo(i));
+      dotsContainer.appendChild(dot);
+    });
+  }
+
+  function update() {
+    const tour = tours[current];
+    img.style.opacity = '0';
+    setTimeout(() => {
+      img.src = tour.image;
+      img.alt = tour.title;
+      img.style.opacity = '1';
+    }, 250);
+    tag.textContent = tour.tag;
+    title.textContent = tour.title;
+    text1.textContent = tour.text1;
+    text2.textContent = tour.text2;
+    buildDots();
+  }
+
+  function goTo(index: number) {
+    current = index;
+    update();
+  }
+
+  prevBtn.addEventListener('click', () => {
+    current = (current - 1 + tours.length) % tours.length;
+    update();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    current = (current + 1) % tours.length;
+    update();
+  });
+
+  // Initialize
+  update();
+</script>

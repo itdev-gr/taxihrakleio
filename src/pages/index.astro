@@ -1,0 +1,435 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="LP Taxi Heraklion | Premium Taxi Service in Crete">
+  <!-- Hero Section -->
+  <section class="relative min-h-[120vh] flex items-center justify-center overflow-hidden">
+    <!-- Background Video -->
+    <div class="absolute inset-0 bg-navy-dark">
+      <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover opacity-55">
+        <source src="/images/hero-video.mp4" type="video/mp4" />
+      </video>
+      <div class="absolute inset-0 bg-gradient-to-b from-navy-dark/80 via-navy-dark/50 to-navy-dark"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+      <div class="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 rounded-full px-5 py-2 mb-8">
+        <span class="w-2 h-2 bg-gold rounded-full animate-pulse"></span>
+        <span class="text-gold text-sm font-medium" data-i18n="hero.badge">Available 24/7 — Heraklion, Crete</span>
+      </div>
+
+      <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+        <span data-i18n="hero.title1">Your Premium Taxi</span><br />
+        <span class="text-gold" data-i18n="hero.title2">Service in Heraklion</span>
+      </h1>
+
+      <p class="text-gray-300 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed" data-i18n="hero.subtitle">
+        Flexible, simple and efficient. Enjoy safe luxurious rides with professional drivers across Crete. Airport transfers, hotel pickups, and custom tours.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+        <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-8 py-4 rounded-xl transition-all duration-300 text-lg shadow-lg shadow-gold/20">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          <span data-i18n="hero.bookBtn">Book Your Ride</span>
+        </a>
+        <a href="tel:+306943551122" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 text-lg backdrop-blur-sm border border-white/20">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <span data-i18n="hero.callBtn">Call Now</span>
+        </a>
+      </div>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-gold mb-1">24/7</div>
+          <div class="text-gray-400 text-sm" data-i18n="hero.stat.availability">Availability</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-gold mb-1">1000+</div>
+          <div class="text-gray-400 text-sm" data-i18n="hero.stat.clients">Happy Clients</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-gold mb-1">10+</div>
+          <div class="text-gray-400 text-sm" data-i18n="hero.stat.experience">Years Experience</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-gold mb-1">5★</div>
+          <div class="text-gray-400 text-sm" data-i18n="hero.stat.rating">Customer Rating</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- Tours Section -->
+  <section class="py-24 bg-white" id="tours">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="home.tours.tag">Discover Heraklion</span>
+        <h2 class="font-display text-4xl sm:text-5xl font-bold text-navy mt-3 mb-6" data-i18n="home.tours.title">Our Tours</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto text-lg" data-i18n="home.tours.subtitle">
+          Explore the rich history and breathtaking landmarks of Heraklion with our guided taxi tours.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Knossos Palace -->
+        <a href="/taste-of-heraklion" class="group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+          <div class="h-56 relative overflow-hidden">
+            <img src="/images/knossos.avif" alt="Knossos Palace" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-gold/90 text-navy text-xs font-semibold px-3 py-1 rounded-full" data-i18n="home.tours.knossos.tag">Historical Excursion</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-navy mb-3" data-i18n="home.tours.knossos.title">Knossos Palace</h3>
+            <p class="text-gray-600 mb-4" data-i18n="home.tours.knossos.desc">Explore the legendary Palace of Knossos, the heart of the ancient Minoan civilization and Europe's oldest city.</p>
+            <span class="inline-flex items-center gap-2 text-gold font-semibold group-hover:gap-3 transition-all">
+              <span data-i18n="home.tours.learnMore">Learn More</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Morosini Fountain -->
+        <a href="/taste-of-heraklion" class="group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+          <div class="h-56 relative overflow-hidden">
+            <img src="/images/Morozini_Fontein_Heraklion_edited.avif" alt="Morosini Fountain" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-gold/90 text-navy text-xs font-semibold px-3 py-1 rounded-full" data-i18n="home.tours.morosini.tag">Venetian Heritage</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-navy mb-3" data-i18n="home.tours.morosini.title">Morosini Fountain</h3>
+            <p class="text-gray-600 mb-4" data-i18n="home.tours.morosini.desc">Discover one of Heraklion's most iconic landmarks at Lions Square, built in 1628 by the Venetian governor Francesco Morosini.</p>
+            <span class="inline-flex items-center gap-2 text-gold font-semibold group-hover:gap-3 transition-all">
+              <span data-i18n="home.tours.learnMore">Learn More</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Bembo Fountain -->
+        <a href="/taste-of-heraklion" class="group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+          <div class="h-56 relative overflow-hidden">
+            <img src="/images/LRM_EXPORT_19584388799415_20190127_204940514_edited.avif" alt="Bembo Fountain" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-gold/90 text-navy text-xs font-semibold px-3 py-1 rounded-full" data-i18n="home.tours.bembo.tag">Historical Landmark</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-navy mb-3" data-i18n="home.tours.bembo.title">Bembo Fountain</h3>
+            <p class="text-gray-600 mb-4" data-i18n="home.tours.bembo.desc">The oldest fountain in Heraklion and one of the finest examples of Venetian architecture on the island.</p>
+            <span class="inline-flex items-center gap-2 text-gold font-semibold group-hover:gap-3 transition-all">
+              <span data-i18n="home.tours.learnMore">Learn More</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Priouli Fountain -->
+        <a href="/taste-of-heraklion" class="group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+          <div class="h-56 relative overflow-hidden">
+            <img src="/images/Priuli_fountain_at_Heraklion_edited.avif" alt="Priouli Fountain" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-gold/90 text-navy text-xs font-semibold px-3 py-1 rounded-full" data-i18n="home.tours.priouli.tag">Venetian Treasure</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-navy mb-3" data-i18n="home.tours.priouli.title">Priouli Fountain</h3>
+            <p class="text-gray-600 mb-4" data-i18n="home.tours.priouli.desc">A hidden gem of Venetian craftsmanship tucked away in a quiet corner of Heraklion's old town.</p>
+            <span class="inline-flex items-center gap-2 text-gold font-semibold group-hover:gap-3 transition-all">
+              <span data-i18n="home.tours.learnMore">Learn More</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Tomb of Nikos Kazantzakis -->
+        <a href="/taste-of-heraklion" class="group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+          <div class="h-56 relative overflow-hidden">
+            <img src="/images/nikos_kazatzakis_tomb.avif" alt="Tomb of Nikos Kazantzakis" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-gold/90 text-navy text-xs font-semibold px-3 py-1 rounded-full" data-i18n="home.tours.kazantzakis.tag">Literary Heritage</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-navy mb-3" data-i18n="home.tours.kazantzakis.title">Tomb of Nikos Kazantzakis</h3>
+            <p class="text-gray-600 mb-4" data-i18n="home.tours.kazantzakis.desc">Visit the resting place of Greece's most celebrated author atop the Martinengo Bastion with panoramic views.</p>
+            <span class="inline-flex items-center gap-2 text-gold font-semibold group-hover:gap-3 transition-all">
+              <span data-i18n="home.tours.learnMore">Learn More</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Church of Saint Titos -->
+        <a href="/taste-of-heraklion" class="group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+          <div class="h-56 relative overflow-hidden">
+            <img src="/images/agios_titos_edited.avif" alt="Church of Saint Titos" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-gold/90 text-navy text-xs font-semibold px-3 py-1 rounded-full" data-i18n="home.tours.titos.tag">Sacred Heritage</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-navy mb-3" data-i18n="home.tours.titos.title">Church of Saint Titos</h3>
+            <p class="text-gray-600 mb-4" data-i18n="home.tours.titos.desc">One of the most important religious and historical monuments on the island, dedicated to the patron saint of Crete.</p>
+            <span class="inline-flex items-center gap-2 text-gold font-semibold group-hover:gap-3 transition-all">
+              <span data-i18n="home.tours.learnMore">Learn More</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="py-24 bg-navy relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute top-0 left-0 w-96 h-96 bg-gold rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+      <div class="absolute bottom-0 right-0 w-96 h-96 bg-gold rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="home.why.tag">Why LP Taxi</span>
+        <h2 class="font-display text-4xl sm:text-5xl font-bold text-white mt-3 mb-6" data-i18n="home.why.title">Why Choose Us</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg" data-i18n="home.why.subtitle">
+          We combine reliability, luxury, and local knowledge to give you the best taxi experience in Crete.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-gold/30 transition-all">
+          <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-white font-bold text-lg mb-3" data-i18n="home.why.safe.title">Safe & Reliable</h3>
+          <p class="text-gray-400 text-sm" data-i18n="home.why.safe.desc">Licensed professional drivers with extensive knowledge of every route across the island.</p>
+        </div>
+
+        <div class="text-center p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-gold/30 transition-all">
+          <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <h3 class="text-white font-bold text-lg mb-3" data-i18n="home.why.luxury.title">Luxury Vehicles</h3>
+          <p class="text-gray-400 text-sm" data-i18n="home.why.luxury.desc">Modern, air-conditioned Mercedes vehicles in excellent condition for maximum comfort.</p>
+        </div>
+
+        <div class="text-center p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-gold/30 transition-all">
+          <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-white font-bold text-lg mb-3" data-i18n="home.why.prices.title">Fixed Prices</h3>
+          <p class="text-gray-400 text-sm" data-i18n="home.why.prices.desc">Transparent pricing with no hidden charges. Know exactly what you'll pay before you ride.</p>
+        </div>
+
+        <div class="text-center p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-gold/30 transition-all">
+          <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-white font-bold text-lg mb-3" data-i18n="home.why.available.title">24/7 Available</h3>
+          <p class="text-gray-400 text-sm" data-i18n="home.why.available.desc">Day or night, we're always ready. Book in advance or call for immediate pickup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview Section -->
+  <section class="py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="relative">
+          <div id="about-carousel" class="aspect-[4/3] rounded-2xl overflow-hidden relative">
+            <img src="/images/IMG_1279.jpeg" alt="LP Taxi Heraklion" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100" data-about-slide="0" />
+            <img src="/images/IMG_1280.jpeg" alt="LP Taxi Heraklion" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="1" />
+            <!-- Navigation Arrows -->
+            <button id="about-prev" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-navy/60 hover:bg-navy/80 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all z-10">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button id="about-next" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-navy/60 hover:bg-navy/80 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all z-10">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+            <!-- Dots -->
+            <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+              <button class="about-dot w-2.5 h-2.5 rounded-full bg-white transition-all" data-dot="0"></button>
+              <button class="about-dot w-2.5 h-2.5 rounded-full bg-white/50 transition-all" data-dot="1"></button>
+            </div>
+          </div>
+          <div class="absolute -bottom-6 -right-6 bg-gold rounded-2xl p-6 shadow-xl hidden md:block z-20">
+            <div class="text-navy font-bold text-3xl">10+</div>
+            <div class="text-navy/70 text-sm font-medium" data-i18n="home.about.experience">Years of<br />Experience</div>
+          </div>
+        </div>
+
+        <div>
+          <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="home.about.tag">About LP Taxi</span>
+          <h2 class="font-display text-4xl sm:text-5xl font-bold text-navy mt-3 mb-6">
+            <span data-i18n="home.about.title1">Your Trusted Ride</span><br /><span data-i18n="home.about.title2">Across Crete</span>
+          </h2>
+          <p class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="home.about.text1">
+            LP Taxi Heraklion is a flexible, simple and efficient taxi service based in Heraklion. We offer safe luxurious rides across the beautiful island of Crete.
+          </p>
+          <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="home.about.text2">
+            Whether you need an airport transfer, a ride to your hotel, or a custom tour of the island's hidden gems, our professional drivers will ensure your journey is comfortable, safe, and memorable. We know every road, every village, and every scenic route.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/aboutus" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-6 py-3 rounded-xl transition-all">
+              <span data-i18n="home.about.btn">Learn More About Us</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-24 bg-navy relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute top-1/2 left-1/2 w-[600px] h-[600px] bg-gold rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="home.testimonials.tag">Testimonials</span>
+        <h2 class="font-display text-4xl sm:text-5xl font-bold text-white mt-3 mb-6" data-i18n="home.testimonials.title">What Our Clients Say</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            name: 'Sarah M.',
+            from: 'United Kingdom',
+            text: 'Excellent service! The driver was waiting for us at the airport with a name sign. Very clean and comfortable Mercedes. Highly recommend for anyone visiting Crete.',
+          },
+          {
+            name: 'Thomas K.',
+            from: 'Germany',
+            text: 'We booked the Taste of Heraklion tour and it was the highlight of our trip. The driver knew all the best local spots. A truly authentic Cretan experience.',
+          },
+          {
+            name: 'Maria L.',
+            from: 'Italy',
+            text: 'Used LP Taxi for all our transfers during a week in Crete. Always on time, always professional. The fixed prices are very fair and transparent.',
+          },
+        ].map(({ name, from, text }) => (
+          <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+            <div class="flex gap-1 mb-4">
+              {[1,2,3,4,5].map(() => (
+                <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))}
+            </div>
+            <p class="text-gray-300 mb-6 leading-relaxed italic">"{text}"</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center">
+                <span class="text-gold font-bold text-sm">{name.charAt(0)}</span>
+              </div>
+              <div>
+                <div class="text-white font-semibold text-sm">{name}</div>
+                <div class="text-gray-500 text-xs">{from}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-24 bg-cream">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-display text-4xl sm:text-5xl font-bold text-navy mb-6" data-i18n="home.cta.title">
+        Ready for Your Ride?
+      </h2>
+      <p class="text-gray-600 text-lg mb-10 max-w-2xl mx-auto" data-i18n="home.cta.subtitle">
+        Book your taxi online in seconds or call us for immediate pickup. We're available 24 hours a day, 7 days a week.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-8 py-4 rounded-xl transition-all text-lg shadow-lg shadow-gold/20">
+          <span data-i18n="home.cta.bookBtn">Book Online Now</span>
+        </a>
+        <a href="tel:+306943551122" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-8 py-4 rounded-xl transition-all text-lg">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          Call +30 694 355 1122
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  const slides = document.querySelectorAll<HTMLImageElement>('[data-about-slide]');
+  const dots = document.querySelectorAll<HTMLButtonElement>('.about-dot');
+  const prevBtn = document.getElementById('about-prev');
+  const nextBtn = document.getElementById('about-next');
+  let current = 0;
+  const total = slides.length;
+
+  function goTo(index: number) {
+    slides.forEach((s, i) => {
+      s.style.opacity = i === index ? '1' : '0';
+    });
+    dots.forEach((d, i) => {
+      d.className = i === index
+        ? 'about-dot w-2.5 h-2.5 rounded-full bg-white transition-all'
+        : 'about-dot w-2.5 h-2.5 rounded-full bg-white/50 transition-all';
+    });
+    current = index;
+  }
+
+  prevBtn?.addEventListener('click', () => goTo((current - 1 + total) % total));
+  nextBtn?.addEventListener('click', () => goTo((current + 1) % total));
+  dots.forEach(d => d.addEventListener('click', () => goTo(Number(d.dataset.dot))));
+
+  setInterval(() => goTo((current + 1) % total), 5000);
+</script>

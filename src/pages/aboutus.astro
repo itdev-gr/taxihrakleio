@@ -1,0 +1,138 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Us | LP Taxi Heraklion">
+  <!-- Page Header -->
+  <section class="relative pt-32 pb-20 bg-navy overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-gold rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="about.header.tag">Get to Know Us</span>
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-3 mb-6" data-i18n="about.header.title">About LP Taxi</h1>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto" data-i18n="about.header.subtitle">
+        Your trusted partner for safe, luxurious transportation across the beautiful island of Crete.
+      </p>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="about.story.tag">Our Story</span>
+          <h2 class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="about.story.title">Elevating the Journey, Enriching Lives</h2>
+          <p class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="about.story.text1">
+            At LP Taxi Service Heraklion, we believe that every journey is an opportunity to elevate the transportation experience for our passengers. As a small taxi company operating in Heraklion, Crete, we are committed to delivering premium service and exceeding customer expectations with every ride.
+          </p>
+          <p class="text-gray-600 mb-6 leading-relaxed" data-i18n="about.story.text2">
+            We view transportation not just as a means of getting from point A to point B, but as an experience. Whether you're embarking on a scenic tour of Crete's countryside, catching a flight at the airport, or simply commuting to work, we are here to make your journey as enjoyable and memorable as possible.
+          </p>
+          <p class="text-gray-600 leading-relaxed" data-i18n="about.story.text3">
+            Together, let's make every journey a journey worth remembering.
+          </p>
+        </div>
+
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden">
+            <img src="/images/who_we_are.avif" alt="LP Taxi Heraklion team" class="w-full h-auto" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="about.values.tag">What Drives Us</span>
+        <h2 class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="about.values.title">Our Values</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
+          <div class="w-14 h-14 bg-gold/10 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3" data-i18n="about.values.service.title">Exceptional Service</h3>
+          <p class="text-gray-600" data-i18n="about.values.service.desc">We are dedicated to providing unparalleled service that goes above and beyond the ordinary. From the moment you book a ride with us to the time you reach your destination, we strive to make every interaction seamless, comfortable, and memorable. Our drivers are not just chauffeurs but ambassadors of hospitality, embodying warmth, professionalism, and attentiveness at every turn.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
+          <div class="w-14 h-14 bg-gold/10 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3" data-i18n="about.values.expertise.title">Local Expertise</h3>
+          <p class="text-gray-600" data-i18n="about.values.expertise.desc">With our intimate knowledge of Heraklion and its surroundings, we offer more than just transportation – we provide insider insights, personalized recommendations, and local guidance to enhance your experience. Whether you're a visitor exploring the island's attractions or a resident commuting to work, we take pride in navigating the city's streets with efficiency and expertise, ensuring you reach your destination safely and on time.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
+          <div class="w-14 h-14 bg-gold/10 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-navy mb-3" data-i18n="about.values.excellence.title">Commitment to Excellence</h3>
+          <p class="text-gray-600" data-i18n="about.values.excellence.desc">We hold ourselves to the highest standards of quality and integrity in everything we do. From maintaining a fleet of well-maintained vehicles to investing in ongoing training and development for our drivers, we are dedicated to continuous improvement and innovation. We embrace feedback from our customers and strive to adapt and evolve in response to their needs, ensuring that we always deliver service of the highest caliber.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet the Team -->
+  <section class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="about.team.tag">The People Behind the Wheel</span>
+        <h2 class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="about.team.title">Meet the Team</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto text-lg" data-i18n="about.team.subtitle">
+          Our dedicated team ensures every ride is safe, comfortable, and memorable.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <!-- Team Member 1 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow group">
+          <div class="w-72 h-72 mx-auto mb-8 rounded-2xl overflow-hidden bg-gradient-to-br from-navy to-navy-light border-4 border-cream group-hover:border-gold transition-colors">
+            <div class="w-full h-full bg-[url('/images/labros.avif')] bg-cover bg-center"></div>
+          </div>
+          <h3 class="text-2xl font-bold text-navy mb-4 text-center">Lampros</h3>
+          <div class="space-y-3">
+            <p class="text-gray-600 text-sm leading-relaxed" data-i18n="about.team.lampros.text1">Meet Lampros, your friendly neighborhood taxi driver with a passion to make every journey memorable. A devoted family man with an entrepreneurial spirit, hoping to become a familiar and trusted face in his community.</p>
+            <p class="text-gray-600 text-sm leading-relaxed" data-i18n="about.team.lampros.text2">With a warm smile and a welcoming demeanor, Lampros goes above and beyond to ensure his passengers feel comfortable and valued from the moment they step into his cab. Whether it's a quick ride to the airport or a leisurely tour of the city, Lampros prides himself on delivering exceptional service with a personal touch.</p>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow group">
+          <div class="w-72 h-72 mx-auto mb-8 rounded-2xl overflow-hidden bg-gradient-to-br from-navy to-navy-light border-4 border-cream group-hover:border-gold transition-colors">
+            <div class="w-full h-full bg-[url('/images/IMG_3579.avif')] bg-cover bg-center"></div>
+          </div>
+          <h3 class="text-2xl font-bold text-navy mb-4 text-center">Popi</h3>
+          <div class="space-y-3">
+            <p class="text-gray-600 text-sm leading-relaxed" data-i18n="about.team.popi.text1">Meet Popi, your taxi driver dedicated to elevating the transportation experience for every passenger she serves. With a heart as warm as her smile, Popi embodies hospitality and professionalism, striving to exceed customer expectations with every ride.</p>
+            <p class="text-gray-600 text-sm leading-relaxed" data-i18n="about.team.popi.text2">Drawing from years of experience navigating the Heraklion's streets, Popi possesses an intimate knowledge of the best routes and shortcuts to ensure her passengers reach their destinations swiftly and comfortably. Whether it's a short commute downtown, transportation to the airport or a longer journey across town, Popi's commitment to customer satisfaction remains unwavering.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-gold">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-6" data-i18n="about.cta.title">Ready to Experience the Difference?</h2>
+      <p class="text-navy/70 text-lg mb-8" data-i18n="about.cta.subtitle">Book your ride today and see why travelers trust LP Taxi Heraklion.</p>
+      <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-8 py-4 rounded-xl transition-all text-lg">
+        <span data-i18n="about.cta.btn">Book Your Ride Now</span>
+      </a>
+    </div>
+  </section>
+</Layout>
