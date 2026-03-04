@@ -200,9 +200,9 @@ import Layout from '../layouts/Layout.astro';
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div id="tours-carousel" class="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 -mx-4 px-4 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:mx-0 md:px-0 md:overflow-visible">
         <!-- Knossos Palace -->
-        <a href="/taste-of-heraklion" class="group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+        <a href="/taste-of-heraklion" class="tour-card min-w-[80vw] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
           <div class="h-56 relative overflow-hidden">
             <img src="/images/knossos.avif" alt="Knossos Palace" width="600" height="400" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
@@ -223,7 +223,7 @@ import Layout from '../layouts/Layout.astro';
         </a>
 
         <!-- Morosini Fountain -->
-        <a href="/taste-of-heraklion" class="group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+        <a href="/taste-of-heraklion" class="tour-card min-w-[80vw] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
           <div class="h-56 relative overflow-hidden">
             <img src="/images/Morozini_Fontein_Heraklion_edited.avif" alt="Morosini Fountain" width="600" height="400" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
@@ -244,7 +244,7 @@ import Layout from '../layouts/Layout.astro';
         </a>
 
         <!-- Bembo Fountain -->
-        <a href="/taste-of-heraklion" class="group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+        <a href="/taste-of-heraklion" class="tour-card min-w-[80vw] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
           <div class="h-56 relative overflow-hidden">
             <img src="/images/LRM_EXPORT_19584388799415_20190127_204940514_edited.avif" alt="Bembo Fountain" width="600" height="400" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
@@ -265,7 +265,7 @@ import Layout from '../layouts/Layout.astro';
         </a>
 
         <!-- Priouli Fountain -->
-        <a href="/taste-of-heraklion" class="group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+        <a href="/taste-of-heraklion" class="tour-card min-w-[80vw] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
           <div class="h-56 relative overflow-hidden">
             <img src="/images/Priuli_fountain_at_Heraklion_edited.avif" alt="Priouli Fountain" width="600" height="400" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
@@ -286,7 +286,7 @@ import Layout from '../layouts/Layout.astro';
         </a>
 
         <!-- Tomb of Nikos Kazantzakis -->
-        <a href="/taste-of-heraklion" class="group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+        <a href="/taste-of-heraklion" class="tour-card min-w-[80vw] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
           <div class="h-56 relative overflow-hidden">
             <img src="/images/nikos_kazatzakis_tomb.avif" alt="Tomb of Nikos Kazantzakis" width="600" height="400" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
@@ -307,7 +307,7 @@ import Layout from '../layouts/Layout.astro';
         </a>
 
         <!-- Church of Saint Titos -->
-        <a href="/taste-of-heraklion" class="group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+        <a href="/taste-of-heraklion" class="tour-card min-w-[80vw] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
           <div class="h-56 relative overflow-hidden">
             <img src="/images/agios_titos_edited.avif" alt="Church of Saint Titos" width="600" height="400" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
@@ -327,8 +327,48 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </a>
       </div>
+
+      <!-- Carousel dots (mobile only) -->
+      <div id="tours-dots" class="flex justify-center gap-2 mt-6 md:hidden">
+        <button class="w-2.5 h-2.5 rounded-full bg-gold transition-colors" aria-label="Go to tour 1"></button>
+        <button class="w-2.5 h-2.5 rounded-full bg-gray-300 transition-colors" aria-label="Go to tour 2"></button>
+        <button class="w-2.5 h-2.5 rounded-full bg-gray-300 transition-colors" aria-label="Go to tour 3"></button>
+        <button class="w-2.5 h-2.5 rounded-full bg-gray-300 transition-colors" aria-label="Go to tour 4"></button>
+        <button class="w-2.5 h-2.5 rounded-full bg-gray-300 transition-colors" aria-label="Go to tour 5"></button>
+        <button class="w-2.5 h-2.5 rounded-full bg-gray-300 transition-colors" aria-label="Go to tour 6"></button>
+      </div>
     </div>
   </section>
+
+  <script>
+    const carousel = document.getElementById('tours-carousel');
+    const dots = document.querySelectorAll('#tours-dots button');
+    const cards = document.querySelectorAll('.tour-card');
+
+    if (carousel && dots.length && cards.length) {
+      // Update active dot on scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = Array.from(cards).indexOf(entry.target);
+            dots.forEach((dot, i) => {
+              dot.classList.toggle('bg-gold', i === index);
+              dot.classList.toggle('bg-gray-300', i !== index);
+            });
+          }
+        });
+      }, { root: carousel, threshold: 0.5 });
+
+      cards.forEach((card) => observer.observe(card));
+
+      // Click dot to scroll to card
+      dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+          cards[i].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        });
+      });
+    }
+  </script>
 
   <!-- About Preview Section -->
   <section class="py-24 bg-cream">
