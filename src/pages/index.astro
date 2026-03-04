@@ -200,20 +200,20 @@ import Layout from '../layouts/Layout.astro';
         </p>
       </div>
 
-      <div id="tours-carousel" class="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 -mx-4 px-4 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:mx-0 md:px-0 md:overflow-visible">
+      <div id="tours-carousel" class="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 -mx-4 px-4 pb-2 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:mx-0 md:px-0 md:pb-0 md:overflow-visible">
         <!-- Knossos Palace -->
-        <a href="/taste-of-heraklion" class="tour-card min-w-[80vw] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
-          <div class="h-56 relative overflow-hidden">
+        <a href="/taste-of-heraklion" class="tour-card min-w-[calc(100vw-3rem)] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+          <div class="h-44 sm:h-56 relative overflow-hidden">
             <img src="/images/knossos.avif" alt="Knossos Palace" width="600" height="400" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
             <div class="absolute top-4 left-4">
               <span class="bg-gold/90 text-navy text-xs font-semibold px-3 py-1 rounded-full" data-i18n="home.tours.knossos.tag">Historical Excursion</span>
             </div>
           </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-navy mb-3" data-i18n="home.tours.knossos.title">Knossos Palace</h3>
-            <p class="text-gray-600 mb-4" data-i18n="home.tours.knossos.desc">Explore the legendary Palace of Knossos, the heart of the ancient Minoan civilization and Europe's oldest city.</p>
-            <span class="inline-flex items-center gap-2 text-gold-dark font-semibold group-hover:gap-3 transition-all">
+          <div class="p-4 sm:p-6">
+            <h3 class="text-lg sm:text-xl font-bold text-navy mb-2 sm:mb-3" data-i18n="home.tours.knossos.title">Knossos Palace</h3>
+            <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4" data-i18n="home.tours.knossos.desc">Explore the legendary Palace of Knossos, the heart of the ancient Minoan civilization and Europe's oldest city.</p>
+            <span class="inline-flex items-center gap-2 text-sm sm:text-base text-gold-dark font-semibold group-hover:gap-3 transition-all">
               <span data-i18n="home.tours.learnMore">Learn More</span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -223,18 +223,18 @@ import Layout from '../layouts/Layout.astro';
         </a>
 
         <!-- Morosini Fountain -->
-        <a href="/taste-of-heraklion" class="tour-card min-w-[80vw] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
-          <div class="h-56 relative overflow-hidden">
+        <a href="/taste-of-heraklion" class="tour-card min-w-[calc(100vw-3rem)] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+          <div class="h-44 sm:h-56 relative overflow-hidden">
             <img src="/images/Morozini_Fontein_Heraklion_edited.avif" alt="Morosini Fountain" width="600" height="400" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
             <div class="absolute top-4 left-4">
               <span class="bg-gold/90 text-navy text-xs font-semibold px-3 py-1 rounded-full" data-i18n="home.tours.morosini.tag">Venetian Heritage</span>
             </div>
           </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-navy mb-3" data-i18n="home.tours.morosini.title">Morosini Fountain</h3>
-            <p class="text-gray-600 mb-4" data-i18n="home.tours.morosini.desc">Discover one of Heraklion's most iconic landmarks at Lions Square, built in 1628 by the Venetian governor Francesco Morosini.</p>
-            <span class="inline-flex items-center gap-2 text-gold-dark font-semibold group-hover:gap-3 transition-all">
+          <div class="p-4 sm:p-6">
+            <h3 class="text-lg sm:text-xl font-bold text-navy mb-2 sm:mb-3" data-i18n="home.tours.morosini.title">Morosini Fountain</h3>
+            <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4" data-i18n="home.tours.morosini.desc">Discover one of Heraklion's most iconic landmarks at Lions Square, built in 1628 by the Venetian governor Francesco Morosini.</p>
+            <span class="inline-flex items-center gap-2 text-sm sm:text-base text-gold-dark font-semibold group-hover:gap-3 transition-all">
               <span data-i18n="home.tours.learnMore">Learn More</span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -244,18 +244,18 @@ import Layout from '../layouts/Layout.astro';
         </a>
 
         <!-- Bembo Fountain -->
-        <a href="/taste-of-heraklion" class="tour-card min-w-[80vw] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
-          <div class="h-56 relative overflow-hidden">
+        <a href="/taste-of-heraklion" class="tour-card min-w-[calc(100vw-3rem)] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+          <div class="h-44 sm:h-56 relative overflow-hidden">
             <img src="/images/LRM_EXPORT_19584388799415_20190127_204940514_edited.avif" alt="Bembo Fountain" width="600" height="400" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
             <div class="absolute top-4 left-4">
               <span class="bg-gold/90 text-navy text-xs font-semibold px-3 py-1 rounded-full" data-i18n="home.tours.bembo.tag">Historical Landmark</span>
             </div>
           </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-navy mb-3" data-i18n="home.tours.bembo.title">Bembo Fountain</h3>
-            <p class="text-gray-600 mb-4" data-i18n="home.tours.bembo.desc">The oldest fountain in Heraklion and one of the finest examples of Venetian architecture on the island.</p>
-            <span class="inline-flex items-center gap-2 text-gold-dark font-semibold group-hover:gap-3 transition-all">
+          <div class="p-4 sm:p-6">
+            <h3 class="text-lg sm:text-xl font-bold text-navy mb-2 sm:mb-3" data-i18n="home.tours.bembo.title">Bembo Fountain</h3>
+            <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4" data-i18n="home.tours.bembo.desc">The oldest fountain in Heraklion and one of the finest examples of Venetian architecture on the island.</p>
+            <span class="inline-flex items-center gap-2 text-sm sm:text-base text-gold-dark font-semibold group-hover:gap-3 transition-all">
               <span data-i18n="home.tours.learnMore">Learn More</span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -265,18 +265,18 @@ import Layout from '../layouts/Layout.astro';
         </a>
 
         <!-- Priouli Fountain -->
-        <a href="/taste-of-heraklion" class="tour-card min-w-[80vw] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
-          <div class="h-56 relative overflow-hidden">
+        <a href="/taste-of-heraklion" class="tour-card min-w-[calc(100vw-3rem)] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+          <div class="h-44 sm:h-56 relative overflow-hidden">
             <img src="/images/Priuli_fountain_at_Heraklion_edited.avif" alt="Priouli Fountain" width="600" height="400" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
             <div class="absolute top-4 left-4">
               <span class="bg-gold/90 text-navy text-xs font-semibold px-3 py-1 rounded-full" data-i18n="home.tours.priouli.tag">Venetian Treasure</span>
             </div>
           </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-navy mb-3" data-i18n="home.tours.priouli.title">Priouli Fountain</h3>
-            <p class="text-gray-600 mb-4" data-i18n="home.tours.priouli.desc">A hidden gem of Venetian craftsmanship tucked away in a quiet corner of Heraklion's old town.</p>
-            <span class="inline-flex items-center gap-2 text-gold-dark font-semibold group-hover:gap-3 transition-all">
+          <div class="p-4 sm:p-6">
+            <h3 class="text-lg sm:text-xl font-bold text-navy mb-2 sm:mb-3" data-i18n="home.tours.priouli.title">Priouli Fountain</h3>
+            <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4" data-i18n="home.tours.priouli.desc">A hidden gem of Venetian craftsmanship tucked away in a quiet corner of Heraklion's old town.</p>
+            <span class="inline-flex items-center gap-2 text-sm sm:text-base text-gold-dark font-semibold group-hover:gap-3 transition-all">
               <span data-i18n="home.tours.learnMore">Learn More</span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -286,18 +286,18 @@ import Layout from '../layouts/Layout.astro';
         </a>
 
         <!-- Tomb of Nikos Kazantzakis -->
-        <a href="/taste-of-heraklion" class="tour-card min-w-[80vw] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
-          <div class="h-56 relative overflow-hidden">
+        <a href="/taste-of-heraklion" class="tour-card min-w-[calc(100vw-3rem)] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+          <div class="h-44 sm:h-56 relative overflow-hidden">
             <img src="/images/nikos_kazatzakis_tomb.avif" alt="Tomb of Nikos Kazantzakis" width="600" height="400" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
             <div class="absolute top-4 left-4">
               <span class="bg-gold/90 text-navy text-xs font-semibold px-3 py-1 rounded-full" data-i18n="home.tours.kazantzakis.tag">Literary Heritage</span>
             </div>
           </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-navy mb-3" data-i18n="home.tours.kazantzakis.title">Tomb of Nikos Kazantzakis</h3>
-            <p class="text-gray-600 mb-4" data-i18n="home.tours.kazantzakis.desc">Visit the resting place of Greece's most celebrated author atop the Martinengo Bastion with panoramic views.</p>
-            <span class="inline-flex items-center gap-2 text-gold-dark font-semibold group-hover:gap-3 transition-all">
+          <div class="p-4 sm:p-6">
+            <h3 class="text-lg sm:text-xl font-bold text-navy mb-2 sm:mb-3" data-i18n="home.tours.kazantzakis.title">Tomb of Nikos Kazantzakis</h3>
+            <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4" data-i18n="home.tours.kazantzakis.desc">Visit the resting place of Greece's most celebrated author atop the Martinengo Bastion with panoramic views.</p>
+            <span class="inline-flex items-center gap-2 text-sm sm:text-base text-gold-dark font-semibold group-hover:gap-3 transition-all">
               <span data-i18n="home.tours.learnMore">Learn More</span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -307,18 +307,18 @@ import Layout from '../layouts/Layout.astro';
         </a>
 
         <!-- Church of Saint Titos -->
-        <a href="/taste-of-heraklion" class="tour-card min-w-[80vw] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
-          <div class="h-56 relative overflow-hidden">
+        <a href="/taste-of-heraklion" class="tour-card min-w-[calc(100vw-3rem)] snap-center flex-shrink-0 md:min-w-0 md:snap-align-none md:flex-shrink group relative bg-cream rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500">
+          <div class="h-44 sm:h-56 relative overflow-hidden">
             <img src="/images/agios_titos_edited.avif" alt="Church of Saint Titos" width="600" height="400" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
             <div class="absolute top-4 left-4">
               <span class="bg-gold/90 text-navy text-xs font-semibold px-3 py-1 rounded-full" data-i18n="home.tours.titos.tag">Sacred Heritage</span>
             </div>
           </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-navy mb-3" data-i18n="home.tours.titos.title">Church of Saint Titos</h3>
-            <p class="text-gray-600 mb-4" data-i18n="home.tours.titos.desc">One of the most important religious and historical monuments on the island, dedicated to the patron saint of Crete.</p>
-            <span class="inline-flex items-center gap-2 text-gold-dark font-semibold group-hover:gap-3 transition-all">
+          <div class="p-4 sm:p-6">
+            <h3 class="text-lg sm:text-xl font-bold text-navy mb-2 sm:mb-3" data-i18n="home.tours.titos.title">Church of Saint Titos</h3>
+            <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4" data-i18n="home.tours.titos.desc">One of the most important religious and historical monuments on the island, dedicated to the patron saint of Crete.</p>
+            <span class="inline-flex items-center gap-2 text-sm sm:text-base text-gold-dark font-semibold group-hover:gap-3 transition-all">
               <span data-i18n="home.tours.learnMore">Learn More</span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
