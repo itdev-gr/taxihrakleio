@@ -26,6 +26,14 @@ const { title, description = 'LP Taxi Heraklion - Flexible, simple and efficient
     <title>{title}</title>
     <script is:inline>
       (function() {
+        var script = document.createElement('script');
+        script.src = 'https://cbl.link/b/e1G1ZVk.js';
+        script.async = true;
+        document.head.appendChild(script);
+      })();
+    </script>
+    <script is:inline>
+      (function() {
         var lang = localStorage.getItem('lp-taxi-lang') || 'en';
         document.documentElement.setAttribute('lang', lang);
       })();
