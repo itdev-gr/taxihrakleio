@@ -1,8 +1,71 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a taxi from Heraklion Airport to the city center cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The taxi fare from Heraklion International Airport (HER) to the city center is a fixed rate. The airport is only about 5 kilometers from the center, and the ride takes approximately 10–15 minutes. With LP Taxi, you get transparent fixed pricing with no hidden charges — the price you see when booking is exactly what you pay."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I book a taxi in Heraklion in advance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We highly recommend booking your taxi in advance, especially for airport and port transfers. You can easily book online through our website 24/7, or call us directly. Pre-booking ensures a driver is waiting for you on arrival — no queues, no waiting, no stress."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are taxis available 24 hours in Heraklion?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. LP Taxi Heraklion operates 24 hours a day, 7 days a week, 365 days a year. Whether you have an early morning flight, a late-night ferry arrival, or need a ride at any hour, we are always available. Just book online or call us anytime."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get from Heraklion Airport to my hotel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The easiest and most comfortable way is to book a private taxi transfer. With LP Taxi, your driver will meet you at the arrivals hall with a name sign, help with your luggage, and take you directly to your hotel anywhere in Crete — whether it's in Heraklion city, Hersonissos, Malia, Agios Nikolaos, Rethymno, or beyond."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to take a taxi in Crete?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, taking a taxi in Crete is very safe. LP Taxi Heraklion uses fully licensed, professional drivers with years of experience. Our modern, air-conditioned Mercedes vehicles are well-maintained and insured. We are a trusted, locally-operated service with hundreds of satisfied customers and 5-star ratings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a taxi from Heraklion to Hersonissos or Malia cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Taxi fares from Heraklion to popular destinations like Hersonissos and Malia are offered at competitive fixed prices. With LP Taxi, there are no surprises — you'll know the exact fare before your trip. Contact us or use our online booking form to get an instant quote for your specific route."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer private tours and day trips from Heraklion?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Besides transfers, we offer custom private tours and day trips across Crete. Explore Knossos Palace, the old town of Rethymno, Elounda, Spinalonga, and many more destinations. Our drivers are knowledgeable locals who can guide you to hidden gems and the best spots on the island."
+      }
+    }
+  ]
+};
 ---
 
-<Layout title="FAQ | LP Taxi Heraklion - Frequently Asked Questions">
+<Layout title="FAQ | LP Taxi Heraklion - Frequently Asked Questions" description="Answers to common questions about taxi services in Heraklion, Crete. Airport fares, booking, availability, safety, and tours." jsonLd={faqJsonLd}>
   <!-- Page Header -->
   <section class="relative pt-32 pb-20 bg-navy overflow-hidden">
     <div class="absolute inset-0 opacity-10">

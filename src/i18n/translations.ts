@@ -4,6 +4,7 @@ export const translations: Record<string, Record<string, string>> = {
     "nav.home": "Home",
     "nav.about": "Who We Are",
     "nav.taste": "Taste of Heraklion",
+    "nav.cruise": "Crete Cruise",
     "nav.book": "Book Now",
     "nav.callUs": "Call Us",
 
@@ -13,6 +14,7 @@ export const translations: Record<string, Record<string, string>> = {
     "footer.link.home": "Home",
     "footer.link.about": "About Us",
     "footer.link.taste": "Taste of Heraklion",
+    "footer.link.cruise": "Crete Cruise",
     "footer.link.book": "Book Online",
     "footer.link.feedback": "Tell Us Your Opinion",
     "footer.link.privacy": "Privacy Policy",
@@ -362,6 +364,7 @@ export const translations: Record<string, Record<string, string>> = {
     "nav.home": "Αρχική",
     "nav.about": "Ποιοι Είμαστε",
     "nav.taste": "Γεύση Ηρακλείου",
+    "nav.cruise": "Κρουαζιέρα Κρήτης",
     "nav.book": "Κράτηση",
     "nav.callUs": "Καλέστε μας",
 
@@ -371,6 +374,7 @@ export const translations: Record<string, Record<string, string>> = {
     "footer.link.home": "Αρχική",
     "footer.link.about": "Σχετικά με εμάς",
     "footer.link.taste": "Γεύση Ηρακλείου",
+    "footer.link.cruise": "Κρουαζιέρα Κρήτης",
     "footer.link.book": "Online Κράτηση",
     "footer.link.feedback": "Πείτε μας τη Γνώμη σας",
     "footer.link.privacy": "Πολιτική Απορρήτου",

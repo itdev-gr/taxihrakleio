@@ -1,8 +1,47 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TaxiService",
+      "name": "LP Taxi Heraklion",
+      "url": "https://www.lptaxiheraklio.com",
+      "telephone": "+306943551122",
+      "email": "lptaxiheraklion@gmail.com",
+      "description": "Premium taxi service in Heraklion, Crete. Airport transfers, hotel pickups, and private tours across Crete.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Heraklion, Crete, Greece"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": "LP Taxi Heraklion",
+      "url": "https://www.lptaxiheraklio.com",
+      "telephone": "+306943551122",
+      "email": "lptaxiheraklion@gmail.com",
+      "priceRange": "$$",
+      "image": "https://www.lptaxiheraklio.com/images/DSC_7943.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Heraklion",
+        "addressRegion": "Crete",
+        "addressCountry": "GR"
+      }
+    }
+  ]
+};
 ---
 
-<Layout title="LP Taxi Heraklion | Premium Taxi Service in Crete">
+<Layout title="LP Taxi Heraklion | Premium Taxi Service in Crete" description="Book a premium taxi in Heraklion, Crete. Airport transfers, hotel pickups, and private tours. Available 24/7 with fixed prices." jsonLd={jsonLd}>
   <!-- Hero Section -->
   <section class="relative min-h-[102vh] flex items-center justify-center overflow-hidden">
     <!-- Background Video -->
@@ -371,19 +410,19 @@ import Layout from '../layouts/Layout.astro';
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div class="relative">
           <div id="about-carousel" class="aspect-[4/3] rounded-2xl overflow-hidden relative">
-            <img src="/images/IMG_1279.avif" alt="LP Taxi Heraklion" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100" data-about-slide="0" loading="lazy" />
-            <img src="/images/IMG_1280.avif" alt="LP Taxi Heraklion" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="1" loading="lazy" />
-            <img src="/images/DSC_7943.jpg" alt="LP Taxi Heraklion" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="2" loading="lazy" />
-            <img src="/images/DSC_7957.jpg" alt="LP Taxi Heraklion" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="3" loading="lazy" />
-            <img src="/images/DSC_7977.jpg" alt="LP Taxi Heraklion" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="4" loading="lazy" />
-            <img src="/images/DSC_7999.jpg" alt="LP Taxi Heraklion" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="5" loading="lazy" />
-            <img src="/images/DSC_8042.jpg" alt="LP Taxi Heraklion" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="6" loading="lazy" />
-            <img src="/images/DSC_8069.jpg" alt="LP Taxi Heraklion" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="7" loading="lazy" />
-            <img src="/images/DSC_8101.jpg" alt="LP Taxi Heraklion" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="8" loading="lazy" />
-            <img src="/images/DSC_8108.jpg" alt="LP Taxi Heraklion" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="9" loading="lazy" />
-            <img src="/images/DSC_8114.jpg" alt="LP Taxi Heraklion" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="10" loading="lazy" />
-            <img src="/images/DSC_8159.jpg" alt="LP Taxi Heraklion" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="11" loading="lazy" />
-            <img src="/images/DSC_8196.jpg" alt="LP Taxi Heraklion" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="12" loading="lazy" />
+            <img src="/images/IMG_1279.avif" alt="LP Taxi luxury SUV ready for airport transfers in Heraklion" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100" data-about-slide="0" loading="lazy" />
+            <img src="/images/IMG_1280.avif" alt="LP Taxi premium vehicle for private tours across Crete" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="1" loading="lazy" />
+            <img src="/images/DSC_7943.jpg" alt="LP Taxi SUV parked by the Cretan seaside at sunset" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="2" loading="lazy" />
+            <img src="/images/DSC_7957.jpg" alt="LP Taxi vehicle side profile on a coastal road in Crete" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="3" loading="lazy" />
+            <img src="/images/DSC_7977.jpg" alt="LP Taxi SUV driving along the Heraklion coastline" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="4" loading="lazy" />
+            <img src="/images/DSC_7999.jpg" alt="Taxi roof sign close-up with the Cretan sea in the background" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="5" loading="lazy" />
+            <img src="/images/DSC_8042.jpg" alt="LP Taxi modern interior with touchscreen navigation and leather steering wheel" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="6" loading="lazy" />
+            <img src="/images/DSC_8069.jpg" alt="Spacious leather rear seats inside LP Taxi with sea view" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="7" loading="lazy" />
+            <img src="/images/DSC_8101.jpg" alt="LP Taxi rear seats with complimentary water bottles for passengers" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="8" loading="lazy" />
+            <img src="/images/DSC_8108.jpg" alt="LP Taxi SUV front view parked at a Crete seaside road at sunset" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="9" loading="lazy" />
+            <img src="/images/DSC_8114.jpg" alt="7-seater badge on LP Taxi vehicle rear window" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="10" loading="lazy" />
+            <img src="/images/DSC_8159.jpg" alt="LP Taxi SUV on a coastal Crete road during golden hour" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="11" loading="lazy" />
+            <img src="/images/DSC_8196.jpg" alt="LP Taxi SUV rear view with tail lights on, parked by the sea" width="1200" height="900" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0" data-about-slide="12" loading="lazy" />
             <!-- Navigation Arrows -->
             <button id="about-prev" aria-label="Previous slide" class="absolute left-3 top-1/2 -translate-y-1/2 w-12 h-12 bg-navy/60 hover:bg-navy/80 text-white rounded-full flex items-center justify-center backdrop-blur-sm transition-all z-10">
               <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
