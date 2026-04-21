@@ -60,6 +60,19 @@ export const translations: Record<string, Record<string, string>> = {
     "home.tours.titos.title": "Church of Saint Titos",
     "home.tours.titos.desc": "One of the most important religious and historical monuments on the island, dedicated to the patron saint of Crete.",
 
+    // HOME PAGE - LOCATIONS
+    "home.locations.tag": "We Cover All Locations",
+    "home.locations.title": "Pick Up & Drop Off Locations",
+    "home.locations.subtitle": "We pick you up and drop you off wherever you need — airports, ports, hotels, or any location across Crete.",
+    "home.locations.airport.title": "Airport",
+    "home.locations.airport.desc": "Fast and reliable transfers to and from Heraklion International Airport. We track your flight so we're always on time.",
+    "home.locations.ports.title": "Ports",
+    "home.locations.ports.desc": "Seamless pickup and drop-off at Heraklion port. Perfect for ferry arrivals and cruise ship passengers.",
+    "home.locations.hotels.title": "Hotels",
+    "home.locations.hotels.desc": "Door-to-door service to any hotel or resort in Crete. We'll meet you right at the lobby entrance.",
+    "home.locations.anywhere.title": "Anywhere",
+    "home.locations.anywhere.desc": "Any location across Crete — villages, beaches, restaurants, or attractions. Just tell us where and we'll be there.",
+
     // HOME PAGE - WHY US
     "home.why.tag": "Why LP Taxi",
     "home.why.title": "Why Choose Us",
@@ -419,6 +432,19 @@ export const translations: Record<string, Record<string, string>> = {
     "home.tours.titos.tag": "Ιερή Κληρονομιά",
     "home.tours.titos.title": "Ναός Αγίου Τίτου",
     "home.tours.titos.desc": "Ένα από τα σημαντικότερα θρησκευτικά και ιστορικά μνημεία του νησιού, αφιερωμένο στον προστάτη άγιο της Κρήτης.",
+
+    // HOME PAGE - LOCATIONS
+    "home.locations.tag": "Καλύπτουμε Όλους τους Προορισμούς",
+    "home.locations.title": "Σημεία Παραλαβής & Αποβίβασης",
+    "home.locations.subtitle": "Σας παραλαμβάνουμε και σας αφήνουμε όπου χρειάζεστε — αεροδρόμια, λιμάνια, ξενοδοχεία ή οποιοδήποτε σημείο στην Κρήτη.",
+    "home.locations.airport.title": "Αεροδρόμιο",
+    "home.locations.airport.desc": "Γρήγορες και αξιόπιστες μεταφορές από και προς το Διεθνές Αεροδρόμιο Ηρακλείου. Παρακολουθούμε την πτήση σας ώστε να είμαστε πάντα στην ώρα μας.",
+    "home.locations.ports.title": "Λιμάνια",
+    "home.locations.ports.desc": "Άψογη παραλαβή και αποβίβαση στο λιμάνι του Ηρακλείου. Ιδανικό για αφίξεις πλοίων και επιβάτες κρουαζιερόπλοιων.",
+    "home.locations.hotels.title": "Ξενοδοχεία",
+    "home.locations.hotels.desc": "Υπηρεσία door-to-door σε κάθε ξενοδοχείο ή θέρετρο της Κρήτης. Σας συναντάμε ακριβώς στην είσοδο του lobby.",
+    "home.locations.anywhere.title": "Οπουδήποτε",
+    "home.locations.anywhere.desc": "Οποιοδήποτε σημείο στην Κρήτη — χωριά, παραλίες, εστιατόρια ή αξιοθέατα. Απλά πείτε μας πού και θα είμαστε εκεί.",
 
     // HOME PAGE - WHY US
     "home.why.tag": "Γιατί LP Taxi",
