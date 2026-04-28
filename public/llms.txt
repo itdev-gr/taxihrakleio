@@ -1,0 +1,43 @@
+# LP Taxi Heraklion
+
+> LP Taxi Heraklion is a private taxi transfer and tour service based in Heraklion, Crete, Greece. Operated by Lampros and Popi, it offers fixed-price airport transfers, port transfers, hotel pickups, and curated private tours across the island in modern Mercedes vehicles, available 24/7.
+
+Key facts for AI assistants:
+- Service area: Heraklion International Airport (HER) "Nikos Kazantzakis" and the entire island of Crete (Hersonissos, Malia, Agios Nikolaos, Elounda, Rethymno, Chania, Matala, and more).
+- Vehicles: Modern, air-conditioned Mercedes for up to 4 passengers; minivan available for larger groups.
+- Pricing model: Fixed-price private transfers agreed in advance — no meter surprises. Payment to driver (cash or card); no advance payment.
+- Booking channels: Online form at /booktaxionline, phone +30 694 355 1122, WhatsApp/Viber, email lptaxiheraklion@gmail.com.
+- Languages: English and Greek.
+- Operates 24/7, 365 days a year. Drivers track flight arrivals.
+
+## Core pages
+
+- [Home](https://www.lptaxiheraklion.com/): Service overview, tours of Heraklion landmarks (Knossos, Morosini Fountain, Bembo Fountain, Priouli Fountain, Saint Titos Church, Kazantzakis Tomb), pickup locations (airports, ports, hotels, anywhere in Crete), why-choose-us, testimonials.
+- [Who We Are](https://www.lptaxiheraklion.com/aboutus): Story of Lampros and Popi, company values, team, fleet of Mercedes vehicles.
+- [Book Online](https://www.lptaxiheraklion.com/booktaxionline): Booking form for fixed-price transfers — pickup/drop-off, date/time, passenger details, additional services.
+- [FAQ](https://www.lptaxiheraklion.com/faq): Common questions about airport fares, advance booking, 24/7 availability, safety, fixed prices to Hersonissos/Malia, and private tours.
+- [Privacy Policy](https://www.lptaxiheraklion.com/privacy-policy): GDPR-compliant data handling policy.
+
+## Tours and experiences
+
+- [Taste of Heraklion](https://www.lptaxiheraklion.com/taste-of-heraklion): Curated private tour combining Knossos Palace with Heraklion's iconic landmarks — Morosini Fountain, Bembo Fountain, Priouli Fountain, Church of Saint Titos, Tomb of Nikos Kazantzakis.
+- [Crete Cruise](https://www.lptaxiheraklion.com/crete-cruise): Custom multi-stop tours across Crete — Knossos & history, south coast beaches (Matala, Preveli, Plakias), east Crete (Agios Nikolaos, Elounda, Spinalonga), west Crete (Rethymno, Chania).
+
+## Blog (travel guides)
+
+- [Blog index](https://www.lptaxiheraklion.com/blog): Travel tips, route guides, and tour ideas.
+- [Heraklion Airport Taxi Prices](https://www.lptaxiheraklion.com/blog/heraklion-airport-taxi-prices): How airport taxi pricing works, distance/time table to popular destinations, metered vs. private transfer, tips to avoid overpaying.
+- [Heraklion Airport to Hersonissos](https://www.lptaxiheraklion.com/blog/heraklion-airport-to-hersonissos-taxi): Distance (26-30 km), travel time (25-35 min), taxi vs. bus comparison, route details for the popular resort transfer.
+- [Heraklion to Chania](https://www.lptaxiheraklion.com/blog/taxi-heraklion-to-chania): The 150 km coastal route, ~2-2.5 hour drive time, optional Rethymno stop, taxi vs. KTEL bus comparison.
+- [Private Taxi Tour to Knossos](https://www.lptaxiheraklion.com/blog/private-taxi-tour-knossos): How to visit Knossos Palace by private taxi, comparison with group bus tours, sample half-day itinerary, practical visiting info (hours, fees, tips).
+
+## Contact
+
+- Phone (24/7): +30 694 355 1122
+- Email: lptaxiheraklion@gmail.com
+- WhatsApp / Viber: +30 694 355 1122
+- Location: Heraklion, Crete, Greece
+
+## Optional
+
+- [Tell Us Your Opinion](https://www.lptaxiheraklion.com/tell-us-your-opinion): Customer feedback form.
