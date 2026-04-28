@@ -5,6 +5,7 @@ export const translations: Record<string, Record<string, string>> = {
     "nav.about": "Who We Are",
     "nav.taste": "Taste of Heraklion",
     "nav.cruise": "Crete Cruise",
+    "nav.blog": "Blog",
     "nav.book": "Book Now",
     "nav.callUs": "Call Us",
 
@@ -15,6 +16,7 @@ export const translations: Record<string, Record<string, string>> = {
     "footer.link.about": "About Us",
     "footer.link.taste": "Taste of Heraklion",
     "footer.link.cruise": "Crete Cruise",
+    "footer.link.blog": "Blog",
     "footer.link.book": "Book Online",
     "footer.link.feedback": "Tell Us Your Opinion",
     "footer.link.privacy": "Privacy Policy",
@@ -370,6 +372,20 @@ export const translations: Record<string, Record<string, string>> = {
     "faq.q7.answer": "Yes! Besides transfers, we offer custom private tours and day trips across Crete. Explore Knossos Palace, the old town of Rethymno, Elounda, Spinalonga, and many more destinations. Our drivers are knowledgeable locals who can guide you to hidden gems and the best spots on the island.",
     "faq.cta.text": "Still have questions? We're here to help!",
     "faq.cta.bookBtn": "Book Your Ride",
+
+    // BLOG
+    "blog.header.tag": "Travel Tips & Guides",
+    "blog.header.title": "The LP Taxi Blog",
+    "blog.header.subtitle": "Honest advice on airport transfers, popular taxi routes across Crete, and private tours from people who drive these roads every day.",
+    "blog.readMore": "Read article",
+    "blog.backToBlog": "Back to blog",
+    "blog.cta.text": "Ready to book your transfer or private tour?",
+    "blog.cta.bookBtn": "Book Your Ride",
+    "blog.cta.title": "Ready to book your transfer?",
+    "blog.cta.subtitle": "Get a fixed price before you travel — no meter, no surprises.",
+    "blog.cta.tourTitle": "Plan your private Knossos tour",
+    "blog.cta.tourSubtitle": "A flexible itinerary, a local driver, and a comfortable Mercedes.",
+    "blog.cta.tourBtn": "See the Taste of Heraklion Tour",
   },
 
   el: {
@@ -378,6 +394,7 @@ export const translations: Record<string, Record<string, string>> = {
     "nav.about": "Ποιοι Είμαστε",
     "nav.taste": "Γεύση Ηρακλείου",
     "nav.cruise": "Κρουαζιέρα Κρήτης",
+    "nav.blog": "Blog",
     "nav.book": "Κράτηση",
     "nav.callUs": "Καλέστε μας",
 
@@ -388,6 +405,7 @@ export const translations: Record<string, Record<string, string>> = {
     "footer.link.about": "Σχετικά με εμάς",
     "footer.link.taste": "Γεύση Ηρακλείου",
     "footer.link.cruise": "Κρουαζιέρα Κρήτης",
+    "footer.link.blog": "Blog",
     "footer.link.book": "Online Κράτηση",
     "footer.link.feedback": "Πείτε μας τη Γνώμη σας",
     "footer.link.privacy": "Πολιτική Απορρήτου",
@@ -743,5 +761,19 @@ export const translations: Record<string, Record<string, string>> = {
     "faq.q7.answer": "Ναι! Εκτός από μεταφορές, προσφέρουμε προσαρμοσμένες ιδιωτικές περιηγήσεις και ημερήσιες εκδρομές σε όλη την Κρήτη. Εξερευνήστε το Ανάκτορο της Κνωσού, την παλιά πόλη του Ρεθύμνου, την Ελούντα, τη Σπιναλόγκα και πολλούς ακόμα προορισμούς. Οι οδηγοί μας είναι ντόπιοι με γνώσεις που μπορούν να σας οδηγήσουν σε κρυφά στολίδια και τα καλύτερα σημεία του νησιού.",
     "faq.cta.text": "Έχετε ακόμα ερωτήσεις; Είμαστε εδώ για να βοηθήσουμε!",
     "faq.cta.bookBtn": "Κλείστε Μεταφορά",
+
+    // BLOG
+    "blog.header.tag": "Συμβουλές & Οδηγοί Ταξιδιού",
+    "blog.header.title": "Το Blog του LP Taxi",
+    "blog.header.subtitle": "Ειλικρινείς συμβουλές για μεταφορές από το αεροδρόμιο, δημοφιλείς διαδρομές ταξί στην Κρήτη και ιδιωτικές ξεναγήσεις, από ανθρώπους που οδηγούν σε αυτούς τους δρόμους καθημερινά.",
+    "blog.readMore": "Διαβάστε το άρθρο",
+    "blog.backToBlog": "Πίσω στο blog",
+    "blog.cta.text": "Έτοιμοι να κλείσετε τη μεταφορά ή την ιδιωτική σας ξενάγηση;",
+    "blog.cta.bookBtn": "Κλείστε Μεταφορά",
+    "blog.cta.title": "Έτοιμοι να κλείσετε τη μεταφορά σας;",
+    "blog.cta.subtitle": "Λάβετε σταθερή τιμή πριν ταξιδέψετε — χωρίς ταξίμετρο, χωρίς εκπλήξεις.",
+    "blog.cta.tourTitle": "Σχεδιάστε την ιδιωτική σας ξενάγηση στην Κνωσό",
+    "blog.cta.tourSubtitle": "Ευέλικτο πρόγραμμα, ντόπιος οδηγός και ένα άνετο Mercedes.",
+    "blog.cta.tourBtn": "Δείτε την Ξενάγηση Γεύση Ηρακλείου",
   },
 };

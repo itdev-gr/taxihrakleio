@@ -1,0 +1,127 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const siteUrl = 'https://www.lptaxiheraklion.com';
+const slug = 'heraklion-airport-to-hersonissos-taxi';
+const title = 'Heraklion Airport To Hersonissos By Taxi: Everything You Need To Know';
+const description = 'Distance, travel time, fare guidance, and tips for booking a taxi from Heraklion Airport directly to your hotel in Hersonissos.';
+const image = '/images/DSC_8159.jpg';
+const datePublished = '2026-04-28';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": title,
+  "description": description,
+  "image": `${siteUrl}${image}`,
+  "datePublished": datePublished,
+  "dateModified": datePublished,
+  "author": { "@type": "Organization", "name": "LP Taxi Heraklion", "url": siteUrl },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LP Taxi Heraklion",
+    "logo": { "@type": "ImageObject", "url": `${siteUrl}/images/logo-lp.svg` }
+  },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": `${siteUrl}/blog/${slug}` }
+};
+---
+
+<Layout title={`${title} | LP Taxi Heraklion`} description={description} ogImage={image} jsonLd={jsonLd}>
+  <!-- Hero -->
+  <section class="relative pt-32 pb-16 bg-navy overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-gold rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+    </div>
+    <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <a href="/blog" class="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors text-sm font-semibold mb-6">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span data-i18n="blog.backToBlog">Back to blog</span>
+      </a>
+      <span class="text-gold font-semibold text-sm tracking-widest uppercase">Routes</span>
+      <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-3 mb-6 leading-tight">{title}</h1>
+      <p class="text-gray-400 text-lg leading-relaxed">{description}</p>
+    </div>
+  </section>
+
+  <!-- Featured image -->
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 mb-12">
+    <div class="aspect-[16/9] rounded-2xl overflow-hidden shadow-xl">
+      <img src={image} alt={title} class="w-full h-full object-cover" />
+    </div>
+  </div>
+
+  <!-- Article body -->
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+    <div class="text-gray-700 text-lg leading-relaxed space-y-6">
+      <p>Hersonissos is one of the most popular resort destinations in Crete, and if you are landing at Heraklion Airport, taking a taxi directly to your hotel is the most comfortable option. Here is exactly what to expect on this route.</p>
+
+      <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">How Far Is Hersonissos From Heraklion Airport?</h2>
+      <p>The distance from <strong>Heraklion Airport (HER) to Hersonissos</strong> is approximately <strong>26 to 30 kilometers</strong>, depending on your exact destination within the resort.</p>
+      <p>The drive follows the E75 national road heading east along the northern coastline. Under normal traffic conditions, the journey takes <strong>around 25 to 35 minutes</strong>.</p>
+      <p>During peak summer months, traffic around Heraklion and the approach to Hersonissos can add 10 to 15 minutes. If you are landing at a busy time, factor this in.</p>
+
+      <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">How Much Does A Taxi From Heraklion Airport To Hersonissos Cost?</h2>
+      <p>The fare for this route varies depending on the time of travel (day or night tariff), your exact hotel location within Hersonissos, and whether you book a metered taxi or a fixed-price private transfer.</p>
+      <p>For an exact quote, <a href="/booktaxionline" class="text-gold font-semibold hover:underline">contact LP Taxi Heraklion</a> and confirm your fixed price before your flight. This way you arrive knowing exactly what you will pay, with no meter running and no unexpected extras.</p>
+
+      <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">Taxi vs. Bus: What Is The Better Option?</h2>
+      <p>There is a bus service (KTEL Heraklion) that connects the city center to Hersonissos. However, the bus does <strong>not stop at the airport directly</strong>. You would need to get from the airport to the Heraklion bus station first, then board the bus to Hersonissos.</p>
+      <p>For a family with luggage after a long flight, this is a lot of extra steps. A direct private taxi from Heraklion Airport to Hersonissos is faster, more comfortable, and far less stressful.</p>
+
+      <div class="overflow-x-auto rounded-xl border border-gray-200 my-6">
+        <table class="w-full text-left text-base">
+          <thead class="bg-navy text-white">
+            <tr>
+              <th class="px-5 py-3 font-semibold"></th>
+              <th class="px-5 py-3 font-semibold">Private Taxi</th>
+              <th class="px-5 py-3 font-semibold">Bus</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr><td class="px-5 py-3 font-medium">Direct to hotel</td><td class="px-5 py-3">Yes</td><td class="px-5 py-3">No</td></tr>
+            <tr class="bg-cream"><td class="px-5 py-3 font-medium">Fixed price option</td><td class="px-5 py-3">Yes</td><td class="px-5 py-3">No</td></tr>
+            <tr><td class="px-5 py-3 font-medium">Luggage handling</td><td class="px-5 py-3">Yes</td><td class="px-5 py-3">Limited</td></tr>
+            <tr class="bg-cream"><td class="px-5 py-3 font-medium">Travel time</td><td class="px-5 py-3">25 to 35 min</td><td class="px-5 py-3">60 to 90 min+</td></tr>
+            <tr><td class="px-5 py-3 font-medium">Suitable for families</td><td class="px-5 py-3">Yes</td><td class="px-5 py-3">Difficult</td></tr>
+            <tr class="bg-cream"><td class="px-5 py-3 font-medium">Vehicle type</td><td class="px-5 py-3">Mercedes</td><td class="px-5 py-3">Public bus</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">What To Expect On The Route</h2>
+      <p>The drive from the airport to Hersonissos is straightforward and scenic. You will pass through the eastern outskirts of Heraklion, then cruise along the coast with views of the Cretan Sea. The road is in good condition and well-lit at night.</p>
+      <p>Your LP Taxi Heraklion driver will take you directly to your hotel, villa, or apartment entrance in a clean, air-conditioned Mercedes. No stops, no detours.</p>
+
+      <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">Tips For A Smooth Transfer</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Book in advance.</strong> During July and August, taxis at the airport rank can be busy. A pre-booked transfer guarantees your driver is waiting when you land.</li>
+        <li><strong>Share your flight details.</strong> LP Taxi Heraklion monitors your flight and adjusts the pickup time automatically if there are delays.</li>
+        <li><strong>Have the hotel address ready.</strong> Hersonissos has many streets and apartment complexes. Having the full address helps the driver get you there without any confusion.</li>
+      </ul>
+
+      <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">Book Your Transfer From Heraklion Airport To Hersonissos</h2>
+      <p>LP Taxi Heraklion provides direct airport transfers to Hersonissos at a fixed price, in a comfortable Mercedes with a professional driver. Your driver will be at arrivals with your name, ready to load your luggage and take you straight to your accommodation.</p>
+      <p>No taxi queue. No meter. No stress. Start your Crete holiday the right way.</p>
+      <p><a href="/booktaxionline" class="text-gold font-semibold hover:underline">Book your transfer online now</a> or call us at <a href="tel:+306943551122" class="text-gold font-semibold hover:underline">+30 694 355 1122</a>.</p>
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="mt-16 p-8 sm:p-10 rounded-2xl bg-navy text-center">
+      <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mb-3" data-i18n="blog.cta.title">Ready to book your transfer?</h3>
+      <p class="text-gray-300 mb-6" data-i18n="blog.cta.subtitle">Get a fixed price before you travel — no meter, no surprises.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-8 py-4 rounded-xl transition-all text-lg shadow-lg shadow-gold/20" data-i18n="blog.cta.bookBtn">
+          Book Your Ride
+        </a>
+        <a href="tel:+306943551122" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl transition-all text-lg border border-white/20">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <span>+30 694 355 1122</span>
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

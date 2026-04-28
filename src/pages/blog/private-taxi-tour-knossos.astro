@@ -1,0 +1,150 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const siteUrl = 'https://www.lptaxiheraklion.com';
+const slug = 'private-taxi-tour-knossos';
+const title = 'Private Taxi Tour To Knossos Palace From Heraklion';
+const description = 'How to visit Knossos Palace with a private taxi tour from Heraklion — flexible schedule, optional stops, and how it compares to a group bus tour.';
+const image = '/images/knossos.avif';
+const datePublished = '2026-04-28';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": title,
+  "description": description,
+  "image": `${siteUrl}${image}`,
+  "datePublished": datePublished,
+  "dateModified": datePublished,
+  "author": { "@type": "Organization", "name": "LP Taxi Heraklion", "url": siteUrl },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LP Taxi Heraklion",
+    "logo": { "@type": "ImageObject", "url": `${siteUrl}/images/logo-lp.svg` }
+  },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": `${siteUrl}/blog/${slug}` }
+};
+---
+
+<Layout title={`${title} | LP Taxi Heraklion`} description={description} ogImage={image} jsonLd={jsonLd}>
+  <!-- Hero -->
+  <section class="relative pt-32 pb-16 bg-navy overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-gold rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+    </div>
+    <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <a href="/blog" class="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors text-sm font-semibold mb-6">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span data-i18n="blog.backToBlog">Back to blog</span>
+      </a>
+      <span class="text-gold font-semibold text-sm tracking-widest uppercase">Tours</span>
+      <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-3 mb-6 leading-tight">{title}</h1>
+      <p class="text-gray-400 text-lg leading-relaxed">{description}</p>
+    </div>
+  </section>
+
+  <!-- Featured image -->
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 mb-12">
+    <div class="aspect-[16/9] rounded-2xl overflow-hidden shadow-xl">
+      <img src={image} alt={title} class="w-full h-full object-cover" />
+    </div>
+  </div>
+
+  <!-- Article body -->
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+    <div class="text-gray-700 text-lg leading-relaxed space-y-6">
+      <p>Knossos Palace is the most important archaeological site in Crete and one of the most significant in all of Europe. If you are staying in Heraklion or have a few hours between transfers, a private taxi tour to Knossos is the most flexible and rewarding way to visit.</p>
+      <p>Here is how to do it properly.</p>
+
+      <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">Where Is Knossos Palace?</h2>
+      <p>Knossos is located just <strong>5 kilometers south of Heraklion city center</strong>, making it one of the closest major sites to the capital. By taxi from Heraklion, the drive takes around <strong>10 to 15 minutes</strong> depending on traffic.</p>
+      <p>The site itself is the remains of the Minoan civilization, dating back over 3,500 years. It was the largest Bronze Age archaeological site on Crete and is considered by many historians to be the oldest city in Europe.</p>
+
+      <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">Why Choose A Private Taxi Tour Over A Group Tour?</h2>
+      <p>Group tours to Knossos depart on a schedule. You follow a guide, stay with the group, and have a fixed amount of time at the site. When time is up, you leave.</p>
+      <p>A private taxi tour works differently. You go when you want, stay as long as you want, and combine Knossos with other stops in Heraklion if you choose.</p>
+
+      <div class="overflow-x-auto rounded-xl border border-gray-200 my-6">
+        <table class="w-full text-left text-base">
+          <thead class="bg-navy text-white">
+            <tr>
+              <th class="px-5 py-3 font-semibold"></th>
+              <th class="px-5 py-3 font-semibold">Private Taxi Tour</th>
+              <th class="px-5 py-3 font-semibold">Group Bus Tour</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr><td class="px-5 py-3 font-medium">Departure time</td><td class="px-5 py-3">You decide</td><td class="px-5 py-3">Fixed</td></tr>
+            <tr class="bg-cream"><td class="px-5 py-3 font-medium">Time at site</td><td class="px-5 py-3">Flexible</td><td class="px-5 py-3">Restricted</td></tr>
+            <tr><td class="px-5 py-3 font-medium">Add extra stops</td><td class="px-5 py-3">Yes</td><td class="px-5 py-3">No</td></tr>
+            <tr class="bg-cream"><td class="px-5 py-3 font-medium">Door-to-door</td><td class="px-5 py-3">Yes</td><td class="px-5 py-3">No</td></tr>
+            <tr><td class="px-5 py-3 font-medium">Group size</td><td class="px-5 py-3">Your group only</td><td class="px-5 py-3">20 to 40 people</td></tr>
+            <tr class="bg-cream"><td class="px-5 py-3 font-medium">Vehicle</td><td class="px-5 py-3">Mercedes</td><td class="px-5 py-3">Coach</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>For families with children, couples, or anyone who wants to move at their own pace, private is simply better.</p>
+
+      <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">The Taste Of Heraklion: A Full Private Tour Experience</h2>
+      <p>LP Taxi Heraklion has designed a dedicated private tour called <a href="/taste-of-heraklion" class="text-gold font-semibold hover:underline">Taste of Heraklion</a> that combines Knossos Palace with the most iconic landmarks of the city. This is not a standard taxi ride. It is a curated experience with a local professional driver who knows every site, every shortcut, and every story worth telling.</p>
+      <p>The tour covers Knossos Palace, the Morosini Fountain at Lions Square, the Bembo Fountain, the Priouli Fountain, the Church of Saint Titos, and the Tomb of Nikos Kazantzakis with its panoramic views over the city.</p>
+      <p>If you want to experience Knossos and Heraklion in one organized private day, <a href="/taste-of-heraklion" class="text-gold font-semibold hover:underline">the Taste of Heraklion tour</a> is the most complete option available.</p>
+
+      <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">What A Private Knossos Taxi Tour Looks Like</h2>
+      <p>If you prefer to build your own itinerary, a typical half-day with LP Taxi Heraklion might look like this:</p>
+
+      <p><strong>Morning:</strong></p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Pickup from your hotel or the port in Heraklion</li>
+        <li>Drive to Knossos Palace in a Mercedes (10 to 15 minutes)</li>
+        <li>Explore the site at your own pace (allow 1.5 to 2 hours)</li>
+      </ul>
+
+      <p><strong>After Knossos:</strong></p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Visit the <strong>Heraklion Archaeological Museum</strong>, which houses the original Minoan artifacts from Knossos</li>
+        <li>Lunch in the old town near Morosini Fountain</li>
+        <li>Short walk to the <strong>Venetian Harbour</strong> and the Koules Fortress</li>
+      </ul>
+
+      <p><strong>Optional additions:</strong></p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>A stop at a local winery in the Peza wine region (20 minutes from Knossos)</li>
+        <li>A visit to the village of Archanes, one of the best-preserved traditional villages in Crete</li>
+      </ul>
+
+      <p>Your driver knows the area and can advise based on how much time you have.</p>
+
+      <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">Practical Information For Visiting Knossos</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Opening hours:</strong> Knossos Palace is open daily. In summer (April to October) it typically opens at 8am. Check current hours before you go.</li>
+        <li><strong>Entrance fee:</strong> Around 15 EUR per adult. Children under 5 are free.</li>
+        <li><strong>Audio guide:</strong> Available at the site entrance. Your taxi driver is not a site guide but will wait and can point you in the right direction on arrival.</li>
+        <li><strong>Best time to visit:</strong> Early morning is cooler and far less crowded. Avoid midday in July and August.</li>
+        <li><strong>Wear comfortable shoes.</strong> The site involves a lot of walking on uneven ancient ground.</li>
+      </ul>
+
+      <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">Book Your Private Knossos Tour</h2>
+      <p>LP Taxi Heraklion offers private tours to Knossos Palace and across Heraklion, tailored to your schedule. Pickup from your hotel, port, or apartment in a comfortable Mercedes. Fixed price agreed before departure. Driver available to wait and continue to additional stops.</p>
+      <p>For a full day experience combining Knossos with the best of Heraklion, explore the <a href="/taste-of-heraklion" class="text-gold font-semibold hover:underline">Taste of Heraklion</a> tour page.</p>
+      <p>Ready to book? <a href="/booktaxionline" class="text-gold font-semibold hover:underline">Reserve your private tour online</a> or call <a href="tel:+306943551122" class="text-gold font-semibold hover:underline">+30 694 355 1122</a>, available 24 hours a day.</p>
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="mt-16 p-8 sm:p-10 rounded-2xl bg-navy text-center">
+      <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mb-3" data-i18n="blog.cta.tourTitle">Plan your private Knossos tour</h3>
+      <p class="text-gray-300 mb-6" data-i18n="blog.cta.tourSubtitle">A flexible itinerary, a local driver, and a comfortable Mercedes.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/taste-of-heraklion" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-8 py-4 rounded-xl transition-all text-lg shadow-lg shadow-gold/20" data-i18n="blog.cta.tourBtn">
+          See the Taste of Heraklion Tour
+        </a>
+        <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl transition-all text-lg border border-white/20" data-i18n="blog.cta.bookBtn">
+          Book Your Ride
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

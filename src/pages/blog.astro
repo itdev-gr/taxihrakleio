@@ -1,0 +1,135 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const siteUrl = 'https://www.lptaxiheraklio.com';
+
+const posts = [
+  {
+    slug: 'heraklion-airport-taxi-prices',
+    title: 'Heraklion Airport Taxi Prices: What Tourists Should Know',
+    excerpt: 'A clear guide to airport taxi fares in Heraklion — how pricing works, what affects the final cost, and how to avoid paying too much.',
+    image: '/images/DSC_7943.jpg',
+    category: 'Airport Transfers',
+    readTime: '6 min read',
+  },
+  {
+    slug: 'heraklion-airport-to-hersonissos-taxi',
+    title: 'Heraklion Airport To Hersonissos By Taxi: Everything You Need To Know',
+    excerpt: 'Distance, travel time, fare guidance, and tips for the most popular resort transfer route from Heraklion Airport.',
+    image: '/images/DSC_8159.jpg',
+    category: 'Routes',
+    readTime: '5 min read',
+  },
+  {
+    slug: 'taxi-heraklion-to-chania',
+    title: 'Taxi From Heraklion To Chania: Distance, Time And Tips',
+    excerpt: 'A 150 km coastal route across Crete. What to expect on the drive, taxi vs. bus, and the easy stop in Rethymno along the way.',
+    image: '/images/DSC_8042.jpg',
+    category: 'Routes',
+    readTime: '6 min read',
+  },
+  {
+    slug: 'private-taxi-tour-knossos',
+    title: 'Private Taxi Tour To Knossos Palace From Heraklion',
+    excerpt: 'How to visit the most important archaeological site in Crete on your own schedule — with a private driver, not a group bus.',
+    image: '/images/knossos.avif',
+    category: 'Tours',
+    readTime: '6 min read',
+  },
+];
+
+const blogJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "LP Taxi Heraklion Blog",
+  "description": "Travel tips, routes, and tour guides for visitors to Heraklion and Crete.",
+  "url": `${siteUrl}/blog`,
+  "publisher": {
+    "@type": "Organization",
+    "name": "LP Taxi Heraklion",
+    "url": siteUrl,
+  },
+  "blogPost": posts.map((p) => ({
+    "@type": "BlogPosting",
+    "headline": p.title,
+    "url": `${siteUrl}/blog/${p.slug}`,
+    "image": `${siteUrl}${p.image}`,
+  })),
+};
+---
+
+<Layout
+  title="Blog | LP Taxi Heraklion - Travel Tips, Routes & Tour Guides"
+  description="Travel tips, taxi routes, airport transfer guides, and private tour ideas for Heraklion and Crete from the LP Taxi team."
+  jsonLd={blogJsonLd}
+>
+  <!-- Page Header -->
+  <section class="relative pt-32 pb-20 bg-navy overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-gold rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="blog.header.tag">Travel Tips & Guides</span>
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-3 mb-6" data-i18n="blog.header.title">The LP Taxi Blog</h1>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto" data-i18n="blog.header.subtitle">
+        Honest advice on airport transfers, popular taxi routes across Crete, and private tours from people who drive these roads every day.
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {posts.map((post) => (
+          <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
+            <a href={`/blog/${post.slug}`} class="block aspect-[16/10] overflow-hidden bg-navy/10">
+              <img
+                src={post.image}
+                alt={post.title}
+                loading="lazy"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </a>
+            <div class="p-7 flex flex-col flex-1">
+              <div class="flex items-center gap-3 mb-4 text-xs text-gray-500">
+                <span class="text-gold font-semibold tracking-widest uppercase">{post.category}</span>
+                <span class="text-gray-300">•</span>
+                <span>{post.readTime}</span>
+              </div>
+              <h2 class="font-display text-2xl font-bold text-navy mb-3 leading-snug">
+                <a href={`/blog/${post.slug}`} class="hover:text-gold transition-colors">{post.title}</a>
+              </h2>
+              <p class="text-gray-600 leading-relaxed mb-6 flex-1">{post.excerpt}</p>
+              <a
+                href={`/blog/${post.slug}`}
+                class="inline-flex items-center gap-2 text-gold font-semibold hover:text-gold-dark transition-colors mt-auto"
+              >
+                <span data-i18n="blog.readMore">Read article</span>
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center mt-20">
+        <p class="text-gray-600 text-lg mb-6" data-i18n="blog.cta.text">Ready to book your transfer or private tour?</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-8 py-4 rounded-xl transition-all text-lg shadow-lg shadow-gold/20" data-i18n="blog.cta.bookBtn">
+            Book Your Ride
+          </a>
+          <a href="tel:+306943551122" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-8 py-4 rounded-xl transition-all text-lg">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <span>+30 694 355 1122</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
