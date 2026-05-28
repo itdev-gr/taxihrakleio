@@ -2,50 +2,50 @@
 
 > LP Taxi Heraklion is a private taxi transfer and tour service based in Heraklion, Crete, Greece. Operated by Lampros and Popi, it offers fixed-price airport transfers, port transfers, hotel pickups, and curated private tours across the island in modern Mercedes vehicles, available 24/7.
 
-Key facts for AI assistants:
-- Service area: Heraklion International Airport (HER) "Nikos Kazantzakis" and the entire island of Crete (Hersonissos, Malia, Agios Nikolaos, Elounda, Rethymno, Chania, Matala, and more).
-- Vehicles: Modern, air-conditioned Mercedes for up to 4 passengers; minivan available for larger groups.
-- Pricing model: Fixed-price private transfers agreed in advance — no meter surprises. Payment to driver (cash or card); no advance payment.
-- Booking channels: Online form at /booktaxionline, phone +30 694 355 1122, WhatsApp/Viber, email lptaxiheraklion@gmail.com.
-- Languages: English and Greek.
-- Operates 24/7, 365 days a year. Drivers track flight arrivals.
+## Key Facts
 
-## Core pages
-
-- [Home](https://www.lptaxiheraklio.com/): Service overview, tours of Heraklion landmarks (Knossos, Morosini Fountain, Bembo Fountain, Priouli Fountain, Saint Titos Church, Kazantzakis Tomb), pickup locations (airports, ports, hotels, anywhere in Crete), why-choose-us, testimonials.
-- [Who We Are](https://www.lptaxiheraklio.com/aboutus/): Story of Lampros and Popi, company values, team, fleet of Mercedes vehicles.
-- [Book Online](https://www.lptaxiheraklio.com/booktaxionline/): Booking form for fixed-price transfers — pickup/drop-off, date/time, passenger details, additional services.
-- [FAQ](https://www.lptaxiheraklio.com/faq/): Common questions about airport fares, advance booking, 24/7 availability, safety, fixed prices to Hersonissos/Malia, and private tours.
-- [Privacy Policy](https://www.lptaxiheraklio.com/privacy-policy/): GDPR-compliant data handling policy.
-
-## Tours and experiences
-
-- [Taste of Heraklion](https://www.lptaxiheraklio.com/taste-of-heraklion/): Curated private tour combining Knossos Palace with Heraklion's iconic landmarks — Morosini Fountain, Bembo Fountain, Priouli Fountain, Church of Saint Titos, Tomb of Nikos Kazantzakis.
-- [Crete Cruise](https://www.lptaxiheraklio.com/crete-cruise/): Custom multi-stop tours across Crete — Knossos & history, south coast beaches (Matala, Preveli, Plakias), east Crete (Agios Nikolaos, Elounda, Spinalonga), west Crete (Rethymno, Chania).
-
-## Blog (travel guides)
-
-- [Blog index](https://www.lptaxiheraklio.com/blog/): Travel tips, route guides, and tour ideas.
-- [Heraklion Airport Taxi Prices](https://www.lptaxiheraklio.com/blog/heraklion-airport-taxi-prices/): How airport taxi pricing works, distance/time table to popular destinations, metered vs. private transfer, tips to avoid overpaying.
-- [Heraklion Airport to Hersonissos](https://www.lptaxiheraklio.com/blog/heraklion-airport-to-hersonissos-taxi/): Distance (26-30 km), travel time (25-35 min), taxi vs. bus comparison, route details for the popular resort transfer.
-- [Heraklion to Chania](https://www.lptaxiheraklio.com/blog/taxi-heraklion-to-chania/): The 150 km coastal route, ~2-2.5 hour drive time, optional Rethymno stop, taxi vs. KTEL bus comparison.
-- [Private Taxi Tour to Knossos](https://www.lptaxiheraklio.com/blog/private-taxi-tour-knossos/): How to visit Knossos Palace by private taxi, comparison with group bus tours, sample half-day itinerary, practical visiting info (hours, fees, tips).
-- [Best Beaches Near Heraklion](https://www.lptaxiheraklio.com/blog/best-beaches-near-heraklion/): Top beaches reachable by taxi — Ammoudara, Agia Pelagia, Matala, Bali, and more with distances.
-- [Heraklion Airport Arrival Guide](https://www.lptaxiheraklio.com/blog/heraklion-airport-arrival-guide/): Step-by-step from landing to hotel — passport control, baggage, SIM cards, transport options.
-- [Day Trips From Heraklion](https://www.lptaxiheraklio.com/blog/day-trips-from-heraklion/): Best day trips by private taxi — Knossos, Rethymno, Elounda, Matala, Lassithi, Archanes.
-- [Is Taxi Safe in Crete?](https://www.lptaxiheraklio.com/blog/is-taxi-safe-in-crete/): Taxi safety guide — licensing, scams to avoid, how to spot official taxis.
-- [Heraklion to Elounda Taxi](https://www.lptaxiheraklio.com/blog/heraklion-to-elounda-taxi/): Transfer to Elounda and Spinalonga — distance, time, boat trips, what to see.
-- [Cruise Port Heraklion Taxi](https://www.lptaxiheraklio.com/blog/cruise-port-heraklion-taxi/): Shore excursions from Heraklion port — Knossos, old town, beach stops.
-- [Heraklion to Rethymno Taxi](https://www.lptaxiheraklio.com/blog/heraklion-to-rethymno-taxi/): The scenic 75 km route, old town highlights, stops along the way.
-- [How to Book a Taxi in Heraklion](https://www.lptaxiheraklio.com/blog/booking-taxi-heraklion-tips/): 7 practical tips — apps, phone, online booking, airport queues, best prices.
-
-## Contact
-
-- Phone (24/7): +30 694 355 1122
+- Name: LP Taxi Heraklion
+- Type: Private Taxi & Transfer Service
+- Location: Heraklion, Crete, Greece (71201)
+- Service Area: Entire island of Crete — Heraklion, Hersonissos, Malia, Agios Nikolaos, Elounda, Rethymno, Chania, Matala
+- Airport: Heraklion International Airport (HER) "Nikos Kazantzakis"
+- Fleet: Modern air-conditioned Mercedes (up to 4 passengers); minivan for larger groups
+- Pricing: Fixed-price private transfers agreed in advance — no meter, no hidden fees
+- Payment: Cash or credit card to driver; no advance payment required
+- Availability: 24/7, 365 days a year
+- Languages: English and Greek
+- Phone: +30 694 355 1122
 - Email: lptaxiheraklion@gmail.com
-- WhatsApp / Viber: +30 694 355 1122
-- Location: Heraklion, Crete, Greece
+- WhatsApp/Viber: +30 694 355 1122
 
-## Optional
+## Sample Prices (per vehicle, not per person)
 
-- [Tell Us Your Opinion](https://www.lptaxiheraklio.com/tell-us-your-opinion/): Customer feedback form.
+- Airport to Heraklion city center: EUR 20-25 (5 km, 10-15 min)
+- Airport to Hersonissos: EUR 40-50 (26-30 km, 25-35 min)
+- Airport to Malia: EUR 50-60
+- Heraklion to Rethymno: EUR 120-140 (75 km, ~1 hour)
+- Heraklion to Chania: EUR 180-220 (150 km, ~2-2.5 hours)
+- Heraklion to Elounda: EUR 90-110
+
+## Links
+
+- [Home](https://www.lptaxiheraklio.com/)
+- [Book Online](https://www.lptaxiheraklio.com/booktaxionline/)
+- [About Us](https://www.lptaxiheraklio.com/aboutus/)
+- [Taste of Heraklion Tour](https://www.lptaxiheraklio.com/taste-of-heraklion/)
+- [Crete Cruise Tours](https://www.lptaxiheraklio.com/crete-cruise/)
+- [FAQ](https://www.lptaxiheraklio.com/faq/)
+- [Blog](https://www.lptaxiheraklio.com/blog/)
+- [Airport Taxi Prices](https://www.lptaxiheraklio.com/blog/heraklion-airport-taxi-prices/)
+- [Airport to Hersonissos](https://www.lptaxiheraklio.com/blog/heraklion-airport-to-hersonissos-taxi/)
+- [Heraklion to Chania](https://www.lptaxiheraklio.com/blog/taxi-heraklion-to-chania/)
+- [Knossos Tour](https://www.lptaxiheraklio.com/blog/private-taxi-tour-knossos/)
+- [Best Beaches](https://www.lptaxiheraklio.com/blog/best-beaches-near-heraklion/)
+- [Is Taxi Safe in Crete?](https://www.lptaxiheraklio.com/blog/is-taxi-safe-in-crete/)
+
+## Social
+
+- [Google Maps](https://maps.app.goo.gl/LPTaxiHeraklion)
+- [TripAdvisor](https://www.tripadvisor.com/Attraction_Review-g189417-d27187081-Reviews-LP_Taxi_Heraklion-Heraklion_Crete.html)
+- [Facebook](https://www.facebook.com/lptaxiheraklion)
+- [Instagram](https://www.instagram.com/lptaxiheraklion)

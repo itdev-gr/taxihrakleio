@@ -14,15 +14,18 @@ const breadcrumbJsonLd = {
 
 const serviceJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Taxi Reservation — LP Taxi Heraklion",
-  "serviceType": "TaxiReservation",
-  "provider": {
-    "@type": "LocalBusiness",
+  "@type": "TaxiReservation",
+  "reservationFor": {
+    "@type": "TaxiService",
+    "@id": `${siteUrl}/#business`,
     "name": "LP Taxi Heraklion",
     "url": `${siteUrl}/`
   },
-  "areaServed": { "@type": "Place", "name": "Crete, Greece" },
+  "provider": {
+    "@type": "TaxiService",
+    "@id": `${siteUrl}/#business`,
+    "name": "LP Taxi Heraklion"
+  },
   "url": `${siteUrl}/booktaxionline/`
 };
 

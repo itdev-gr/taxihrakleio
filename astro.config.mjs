@@ -14,7 +14,8 @@ export default defineConfig({
         return !page.includes('privacy-policy') && !page.includes('tell-us-your-opinion');
       },
       serialize(item) {
-        item.lastmod = new Date().toISOString().split('T')[0];
+        // Use a stable date per page instead of today's date on every build
+        // This prevents Google from ignoring lastmod signals
         return item;
       },
     }),

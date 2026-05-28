@@ -11,9 +11,10 @@ interface Props {
   noindex?: boolean;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   articleMeta?: { published: string; author: string };
+  preloadImage?: string;
 }
 
-const { title, description = 'Taxi Heraklion — fixed-price airport transfers, hotel pickups, and private tours across Crete. Available 24/7.', ogImage, ogType = 'website', noindex = false, jsonLd, articleMeta } = Astro.props;
+const { title, description = 'Taxi Heraklion — fixed-price airport transfers, hotel pickups, and private tours across Crete. Available 24/7.', ogImage, ogType = 'website', noindex = false, jsonLd, articleMeta, preloadImage } = Astro.props;
 
 const siteUrl = 'https://www.lptaxiheraklio.com';
 const canonicalURL = new URL(Astro.url.pathname, siteUrl).href;
@@ -59,10 +60,12 @@ const ogImageURL = ogImage ? new URL(ogImage, siteUrl).href : `${siteUrl}/images
       <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
     )}
 
+    {preloadImage && <link rel="preload" as="image" href={preloadImage} />}
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" /></noscript>
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" /></noscript>
     <title>{title}</title>
     <script is:inline>
       (function() {
