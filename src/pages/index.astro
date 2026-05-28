@@ -5,14 +5,13 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "TaxiService",
+      "@type": "LocalBusiness",
       "@id": "https://www.lptaxiheraklio.com/#business",
       "name": "LP Taxi Heraklion",
       "url": "https://www.lptaxiheraklio.com/",
       "telephone": "+30 694 355 1122",
       "email": "lptaxiheraklion@gmail.com",
       "description": "Taxi Heraklion — fixed-price airport transfers, hotel pickups, and private tours across Crete. 24/7 service.",
-      "priceRange": "EUR 20–220",
       "image": "https://www.lptaxiheraklio.com/images/DSC_7943.jpg",
       "logo": {
         "@type": "ImageObject",
@@ -45,7 +44,7 @@ const jsonLd = {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
         "opens": "00:00",
-        "closes": "23:59"
+        "closes": "00:00"
       },
       "sameAs": [
         "https://www.facebook.com/lptaxiheraklion",
@@ -54,32 +53,6 @@ const jsonLd = {
       ],
       "paymentAccepted": "Cash, Credit Card",
       "currenciesAccepted": "EUR",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Taxi Transfer Prices",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Airport to Heraklion city center" },
-            "priceSpecification": { "@type": "PriceSpecification", "price": "20", "priceCurrency": "EUR", "maxPrice": "25" }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Airport to Hersonissos" },
-            "priceSpecification": { "@type": "PriceSpecification", "price": "40", "priceCurrency": "EUR", "maxPrice": "50" }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Heraklion to Rethymno" },
-            "priceSpecification": { "@type": "PriceSpecification", "price": "120", "priceCurrency": "EUR", "maxPrice": "140" }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Heraklion to Chania" },
-            "priceSpecification": { "@type": "PriceSpecification", "price": "180", "priceCurrency": "EUR", "maxPrice": "220" }
-          }
-        ]
-      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
@@ -95,11 +68,7 @@ const jsonLd = {
       "name": "LP Taxi Heraklion",
       "url": "https://www.lptaxiheraklio.com/",
       "publisher": { "@id": "https://www.lptaxiheraklio.com/#business" },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.lptaxiheraklio.com/blog/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "inLanguage": "en"
     }
   ]
 };
