@@ -11,6 +11,7 @@ const posts = [
     image: '/images/DSC_7943.jpg',
     category: 'Airport Transfers',
     readTime: '6 min read',
+    date: '2026-04-28',
   },
   {
     slug: 'heraklion-airport-to-hersonissos-taxi',
@@ -19,6 +20,7 @@ const posts = [
     image: '/images/DSC_8159.jpg',
     category: 'Routes',
     readTime: '5 min read',
+    date: '2026-04-28',
   },
   {
     slug: 'taxi-heraklion-to-chania',
@@ -27,6 +29,7 @@ const posts = [
     image: '/images/DSC_8042.jpg',
     category: 'Routes',
     readTime: '6 min read',
+    date: '2026-04-28',
   },
   {
     slug: 'private-taxi-tour-knossos',
@@ -35,30 +38,79 @@ const posts = [
     image: '/images/knossos.avif',
     category: 'Tours',
     readTime: '6 min read',
+    date: '2026-04-28',
   },
   {
     slug: 'best-beaches-near-heraklion',
     title: 'Best Beaches Near Heraklion You Can Reach By Taxi',
     excerpt: 'The top beaches within easy reach of Heraklion by private taxi — from family-friendly Agia Pelagia to the remote beauty of Matala and Bali.',
-    image: '/images/DSC_8159.jpg',
+    image: '/images/DSC_7977.jpg',
     category: 'Travel Guide',
     readTime: '7 min read',
+    date: '2026-05-28',
   },
   {
     slug: 'heraklion-airport-arrival-guide',
     title: 'Heraklion Airport Arrival Guide: What To Do When You Land',
     excerpt: 'Step-by-step guide to arriving at Heraklion Airport — passport control, baggage, finding your taxi, SIM cards, and getting to your hotel.',
-    image: '/images/DSC_8108.jpg',
+    image: '/images/DSC_8069.jpg',
     category: 'Airport Guide',
     readTime: '7 min read',
+    date: '2026-05-28',
   },
   {
     slug: 'day-trips-from-heraklion',
     title: 'Best Day Trips From Heraklion By Private Taxi',
     excerpt: 'The top day trips from Heraklion — Knossos, Rethymno, Elounda, Matala, Lassithi Plateau, and more with a private driver.',
-    image: '/images/knossos.avif',
+    image: '/images/DSC_7957.jpg',
     category: 'Tours & Excursions',
     readTime: '8 min read',
+    date: '2026-05-28',
+  },
+  {
+    slug: 'is-taxi-safe-in-crete',
+    title: 'Is It Safe To Take a Taxi in Crete? What Tourists Should Know',
+    excerpt: 'Everything about taxi safety in Crete — licensing, scams to avoid, how to spot official taxis, and why pre-booking is the safest option.',
+    image: '/images/DSC_7999.jpg',
+    category: 'Travel Tips',
+    readTime: '5 min read',
+    date: '2026-05-28',
+  },
+  {
+    slug: 'heraklion-to-elounda-taxi',
+    title: 'Taxi From Heraklion To Elounda and Spinalonga: The Complete Guide',
+    excerpt: 'How to get from Heraklion to Elounda by private taxi — distance, travel time, Spinalonga boat trips, and what to see along the way.',
+    image: '/images/DSC_8196.jpg',
+    category: 'Routes',
+    readTime: '6 min read',
+    date: '2026-05-28',
+  },
+  {
+    slug: 'cruise-port-heraklion-taxi',
+    title: 'Heraklion Cruise Port Taxi: Where To Go With a Few Hours in Crete',
+    excerpt: 'The best things to do near Heraklion port when your cruise ship docks — Knossos, old town walk, and beach stops by private taxi.',
+    image: '/images/DSC_8101.jpg',
+    category: 'Cruise Transfers',
+    readTime: '6 min read',
+    date: '2026-05-28',
+  },
+  {
+    slug: 'heraklion-to-rethymno-taxi',
+    title: 'Taxi From Heraklion To Rethymno: Route, Time and What To See',
+    excerpt: 'The scenic 75 km drive from Heraklion to Rethymno by private taxi — travel time, route options, stops along the way, and old town highlights.',
+    image: '/images/DSC_8114.jpg',
+    category: 'Routes',
+    readTime: '6 min read',
+    date: '2026-05-28',
+  },
+  {
+    slug: 'booking-taxi-heraklion-tips',
+    title: 'How To Book a Taxi in Heraklion: 7 Tips For Tourists',
+    excerpt: 'Practical advice on booking taxis in Heraklion — apps, phone, online booking, airport queues, and how to get the best price every time.',
+    image: '/images/IMG_1279.avif',
+    category: 'Travel Tips',
+    readTime: '5 min read',
+    date: '2026-05-28',
   },
 ];
 
@@ -125,10 +177,14 @@ const blogJsonLd = {
               />
             </a>
             <div class="p-7 flex flex-col flex-1">
-              <div class="flex items-center gap-3 mb-4 text-xs text-gray-500">
+              <div class="flex items-center gap-3 mb-4 text-xs text-gray-500 flex-wrap">
                 <span class="text-gold font-semibold tracking-widest uppercase">{post.category}</span>
                 <span class="text-gray-300">•</span>
                 <span>{post.readTime}</span>
+                <span class="text-gray-300">•</span>
+                <span>By Lampros</span>
+                <span class="text-gray-300">•</span>
+                <time datetime={post.date}>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
               </div>
               <h2 class="font-display text-2xl font-bold text-navy mb-3 leading-snug">
                 <a href={`/blog/${post.slug}`} class="hover:text-gold transition-colors">{post.title}</a>
