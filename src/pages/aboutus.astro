@@ -15,13 +15,18 @@ const breadcrumbJsonLd = {
 const aboutPageJsonLd = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
+  "@id": `${siteUrl}/aboutus/#aboutpage`,
   "name": "About LP Taxi Heraklion",
   "url": `${siteUrl}/aboutus/`,
   "mainEntity": {
     "@type": "Person",
+    "@id": `${siteUrl}/#lampros`,
     "name": "Lampros",
     "jobTitle": "Founder & Driver",
-    "worksFor": { "@id": "https://www.lptaxiheraklio.com/#business" }
+    "worksFor": {
+      "@type": "LocalBusiness",
+      "@id": `${siteUrl}/#business`
+    }
   }
 };
 

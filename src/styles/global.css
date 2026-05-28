@@ -10,8 +10,8 @@
   --color-cream: #faf8f2;
   --color-gray-warm: #f1efe9;
 
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-display: 'Playfair Display', Georgia, serif;
+  --font-sans: Arial, Helvetica, system-ui, -apple-system, sans-serif;
+  --font-display: Georgia, 'Times New Roman', serif;
 }
 
 html {

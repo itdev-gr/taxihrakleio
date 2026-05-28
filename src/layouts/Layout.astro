@@ -62,10 +62,6 @@ const ogImageURL = ogImage ? new URL(ogImage, siteUrl).href : `${siteUrl}/images
 
     {preloadImage && <link rel="preload" as="image" href={preloadImage} />}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" /></noscript>
     <title>{title}</title>
     <script is:inline>
       (function() {

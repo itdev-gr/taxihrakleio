@@ -14,17 +14,17 @@ const breadcrumbJsonLd = {
 
 const serviceJsonLd = {
   "@context": "https://schema.org",
-  "@type": "TaxiReservation",
-  "reservationFor": {
-    "@type": "TaxiService",
-    "@id": `${siteUrl}/#business`,
-    "name": "LP Taxi Heraklion",
-    "url": `${siteUrl}/`
-  },
+  "@type": "Service",
+  "@id": `${siteUrl}/booktaxionline/#service`,
+  "name": "Taxi Booking — LP Taxi Heraklion",
+  "description": "Book a fixed-price taxi transfer or private tour in Heraklion, Crete. Airport transfers, hotel pickups, port transfers, and custom tours.",
   "provider": {
-    "@type": "TaxiService",
-    "@id": `${siteUrl}/#business`,
-    "name": "LP Taxi Heraklion"
+    "@type": "LocalBusiness",
+    "@id": `${siteUrl}/#business`
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Crete, Greece"
   },
   "url": `${siteUrl}/booktaxionline/`
 };
