@@ -68,7 +68,7 @@ const jsonLd = {
   <!-- Featured image -->
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 mb-12">
     <div class="aspect-[16/9] rounded-2xl overflow-hidden shadow-xl">
-      <img src={image} alt={title} class="w-full h-full object-cover" />
+      <img src={image} alt={title} class="w-full h-full object-cover" width="1600" height="1066" fetchpriority="high" />
     </div>
   </div>
 
@@ -79,7 +79,7 @@ const jsonLd = {
       <p>Here is a straight answer with no surprises.</p>
 
       <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">How Heraklion Airport Taxi Pricing Works</h2>
-      <p>Taxi fares from Heraklion Airport are <strong>regulated by the Prefecture of Crete</strong>. This means drivers cannot charge whatever they want. There is a fixed rate system based on distance zones, which protects you as a passenger.</p>
+      <p>Taxi fares from <a href="https://www.heraklion-airport.info/" target="_blank" rel="noopener noreferrer">Heraklion Airport</a> are <strong>regulated by the Prefecture of Crete</strong>. This means drivers cannot charge whatever they want. There is a fixed rate system based on distance zones, which protects you as a passenger.</p>
       <p>That said, a few variables do affect the final price:</p>
       <ul class="list-disc pl-6 space-y-2">
         <li><strong>Time of day:</strong> Night fares (usually after midnight and before 6am) apply a higher tariff, known as Tariff 2.</li>
@@ -89,42 +89,59 @@ const jsonLd = {
       </ul>
       <p>Always make sure the driver starts the meter when you get in, or agree on a fixed price in advance when booking a private transfer.</p>
 
-      <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">Estimated Taxi Fares From Heraklion Airport</h2>
-      <p>The table below gives a general idea of distances and travel times from Heraklion Airport to the most popular destinations in Crete. Actual fares depend on vehicle type, time of travel, and your exact drop-off location.</p>
+      <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">Heraklion Airport Taxi Prices to Popular Destinations</h2>
+      <p>The table below shows fixed-price ranges for private taxi transfers from Heraklion Airport to the most popular destinations across Crete. These are the prices you can expect when you pre-book a private transfer with LP Taxi Heraklion.</p>
 
       <div class="overflow-x-auto rounded-xl border border-gray-200 my-6">
         <table class="w-full text-left text-base">
           <thead class="bg-navy text-white">
             <tr>
               <th class="px-5 py-3 font-semibold">Destination</th>
-              <th class="px-5 py-3 font-semibold">Distance (approx.)</th>
-              <th class="px-5 py-3 font-semibold">Travel Time (approx.)</th>
+              <th class="px-5 py-3 font-semibold">Distance</th>
+              <th class="px-5 py-3 font-semibold">Travel Time</th>
+              <th class="px-5 py-3 font-semibold">Price Range</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-gray-200">
-            <tr><td class="px-5 py-3">Heraklion City Center</td><td class="px-5 py-3">5 km</td><td class="px-5 py-3">10 to 15 min</td></tr>
-            <tr class="bg-cream"><td class="px-5 py-3">Hersonissos</td><td class="px-5 py-3">28 km</td><td class="px-5 py-3">25 to 35 min</td></tr>
-            <tr><td class="px-5 py-3">Malia</td><td class="px-5 py-3">35 km</td><td class="px-5 py-3">30 to 40 min</td></tr>
-            <tr class="bg-cream"><td class="px-5 py-3">Agios Nikolaos</td><td class="px-5 py-3">68 km</td><td class="px-5 py-3">55 to 70 min</td></tr>
-            <tr><td class="px-5 py-3">Rethymno</td><td class="px-5 py-3">75 km</td><td class="px-5 py-3">60 to 75 min</td></tr>
-            <tr class="bg-cream"><td class="px-5 py-3">Chania</td><td class="px-5 py-3">150 km</td><td class="px-5 py-3">110 to 130 min</td></tr>
-            <tr><td class="px-5 py-3">Elounda</td><td class="px-5 py-3">75 km</td><td class="px-5 py-3">60 to 75 min</td></tr>
-            <tr class="bg-cream"><td class="px-5 py-3">Matala</td><td class="px-5 py-3">70 km</td><td class="px-5 py-3">60 to 75 min</td></tr>
+            <tr><td class="px-5 py-3">Heraklion City Center</td><td class="px-5 py-3">5 km</td><td class="px-5 py-3">10–15 min</td><td class="px-5 py-3 font-semibold text-navy">&euro;20–25</td></tr>
+            <tr class="bg-cream"><td class="px-5 py-3">Ammoudara</td><td class="px-5 py-3">8 km</td><td class="px-5 py-3">15 min</td><td class="px-5 py-3 font-semibold text-navy">&euro;20–25</td></tr>
+            <tr><td class="px-5 py-3">Hersonissos</td><td class="px-5 py-3">26 km</td><td class="px-5 py-3">25–30 min</td><td class="px-5 py-3 font-semibold text-navy">&euro;40–50</td></tr>
+            <tr class="bg-cream"><td class="px-5 py-3">Stalis</td><td class="px-5 py-3">30 km</td><td class="px-5 py-3">30 min</td><td class="px-5 py-3 font-semibold text-navy">&euro;45–55</td></tr>
+            <tr><td class="px-5 py-3">Malia</td><td class="px-5 py-3">34 km</td><td class="px-5 py-3">30–35 min</td><td class="px-5 py-3 font-semibold text-navy">&euro;50–60</td></tr>
+            <tr class="bg-cream"><td class="px-5 py-3">Bali</td><td class="px-5 py-3">45 km</td><td class="px-5 py-3">45 min</td><td class="px-5 py-3 font-semibold text-navy">&euro;60–75</td></tr>
+            <tr><td class="px-5 py-3">Agios Nikolaos</td><td class="px-5 py-3">65 km</td><td class="px-5 py-3">50–60 min</td><td class="px-5 py-3 font-semibold text-navy">&euro;80–100</td></tr>
+            <tr class="bg-cream"><td class="px-5 py-3">Matala</td><td class="px-5 py-3">67 km</td><td class="px-5 py-3">75 min</td><td class="px-5 py-3 font-semibold text-navy">&euro;80–100</td></tr>
+            <tr><td class="px-5 py-3">Elounda</td><td class="px-5 py-3">72 km</td><td class="px-5 py-3">60–70 min</td><td class="px-5 py-3 font-semibold text-navy">&euro;90–110</td></tr>
+            <tr class="bg-cream"><td class="px-5 py-3">Rethymno</td><td class="px-5 py-3">78 km</td><td class="px-5 py-3">75–85 min</td><td class="px-5 py-3 font-semibold text-navy">&euro;90–110</td></tr>
+            <tr><td class="px-5 py-3">Chania</td><td class="px-5 py-3">150 km</td><td class="px-5 py-3">2–2.5 hrs</td><td class="px-5 py-3 font-semibold text-navy">&euro;180–220</td></tr>
           </tbody>
         </table>
       </div>
 
-      <p><strong>For an exact fixed price on your route, contact LP Taxi Heraklion directly before you travel.</strong> Fixed-price transfers are agreed in advance so you know the total cost before your driver arrives.</p>
+      <p class="text-sm text-gray-500 italic">Prices are indicative for private transfers (up to 4 passengers). Final price confirmed at booking. No hidden fees — price includes tolls, luggage, and waiting time.</p>
+
+      <p class="mt-4"><strong>For an exact fixed price on your route, <a href="/booktaxionline/" class="text-gold font-semibold hover:underline">book online</a> or contact LP Taxi Heraklion directly before you travel.</strong> Fixed-price transfers are agreed in advance so you know the total cost before your driver arrives.</p>
+
+      <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">What Affects Taxi Prices at Heraklion Airport?</h2>
+      <p>If you take a metered taxi from the rank outside arrivals, the fare is calculated using the taximeter. In Crete, the base fare starts at around &euro;3.50, and the rate per kilometer is approximately &euro;0.80 during daytime (Tariff 1) and &euro;1.20 at night (Tariff 2). These regulated rates mean that a short ride to Heraklion city center will typically cost between &euro;15 and &euro;25 on the meter, depending on traffic and the exact location of your hotel.</p>
+      <p>For longer journeys, metered fares can add up quickly and become unpredictable. A ride to Hersonissos on the meter could range anywhere from &euro;35 to &euro;55 depending on the time of day, the route taken, and traffic conditions along the national highway. This is one reason why many tourists prefer to pre-book a private transfer at a fixed rate — you agree on the price before you land, and that is exactly what you pay.</p>
+      <p>There are also a few additional charges that may apply to metered taxi rides from the airport. An airport pickup surcharge of &euro;2 to &euro;4 is standard at Heraklion Airport. Each piece of luggage over 10 kilograms may carry a small extra fee of around &euro;0.50. If you are traveling on a public holiday, a holiday surcharge applies as well. These extras are regulated and printed on the official tariff sheet that every licensed taxi must display inside the vehicle.</p>
 
       <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">Metered Taxi vs. Private Transfer: What Is The Difference?</h2>
-      <p>A <strong>metered taxi</strong> picks you up from the taxi rank outside arrivals. You pay what the meter says, plus any applicable extras. It is straightforward for short distances like the city center.</p>
+      <p>A <strong>metered taxi</strong> picks you up from the taxi rank outside arrivals. You pay what the meter says, plus any applicable extras. It is straightforward for short distances like the city center. However, the final price is always uncertain until you reach your destination, and during peak season long queues can form at the taxi rank.</p>
       <p>A <strong>private transfer</strong> is pre-booked and has a fixed price agreed in advance. No surprises, no waiting at the rank, the driver is there with your name on a sign. For longer routes to Hersonissos, Malia, or Chania, a private taxi transfer is often the smarter choice because you know exactly what you are paying before you even land.</p>
-      <p>LP Taxi Heraklion operates exclusively as a <strong>private transfer and tour service</strong>, using modern Mercedes vehicles for maximum comfort on every route.</p>
+      <p>LP Taxi Heraklion operates exclusively as a <strong>private transfer and tour service</strong>, using modern Mercedes vehicles for maximum comfort on every route. When you compare the fixed prices in the table above with what a metered taxi might cost on the same route — especially when you factor in potential surcharges, tolls, and the uncertainty of the meter — the private transfer consistently offers better value and a far more comfortable experience.</p>
+
+      <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">Why Fixed-Price Transfers Save You Money</h2>
+      <p>When you compare the prices in the table above with what you might pay on a meter, the fixed-price transfer almost always comes out as the better deal for distances beyond 20 kilometers. There are several reasons for this.</p>
+      <p>First, a fixed-price transfer removes all uncertainty. You know the exact amount before you even board your flight, so there is no need to watch the meter anxiously or wonder whether the driver is taking a longer route. Second, fixed prices already include tolls, luggage handling, and a reasonable waiting time at the airport in case your flight is delayed. With a metered taxi, tolls on the national road to destinations like Rethymno or Chania are added on top of the fare.</p>
+      <p>Third, a pre-booked transfer means your driver monitors your flight in real time. If your plane is late, the driver adjusts their arrival accordingly at no extra charge. You walk out of arrivals, see your name on a sign, and you are on your way. There is no waiting in the taxi queue, no negotiating prices in the heat, and no scrambling to find a vehicle big enough if you are traveling with a family and heavy suitcases.</p>
+      <p>For short trips to central Heraklion or Ammoudara, a metered taxi from the rank is perfectly fine and very affordable. But for anything beyond that — Hersonissos, Malia, Agios Nikolaos, Rethymno, or certainly Chania — a pre-booked fixed-price transfer offers better value, more comfort, and total peace of mind.</p>
 
       <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">Tips To Avoid Paying Too Much</h2>
       <ol class="list-decimal pl-6 space-y-2">
         <li><strong>Pre-book for longer distances.</strong> Fixed-price transfers protect your budget on routes over 30km.</li>
-        <li><strong>Only use official taxis.</strong> Look for the yellow color and the taxi sign on the roof. Avoid informal offers inside the terminal.</li>
+        <li><strong>Only use official taxis.</strong> Look for the taxi sign on the roof. Avoid informal offers inside the terminal. Greek taxi regulations are set by the Ministry of Infrastructure and Transport.</li>
         <li><strong>Ask for a receipt.</strong> Every licensed taxi driver must provide one.</li>
         <li><strong>Check night surcharges.</strong> If your flight lands late, ask the driver which tariff applies before you start.</li>
         <li><strong>Book a private transfer for full transparency.</strong> With a pre-booked private taxi, the price is fixed before departure.</li>
@@ -132,7 +149,7 @@ const jsonLd = {
 
       <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">Book Your Heraklion Airport Transfer</h2>
       <p>LP Taxi Heraklion offers fixed-price airport transfers across all major destinations in Crete. No meter, no surprises, no waiting in the taxi queue after a long flight. Your driver tracks your flight, meets you at arrivals, and gets you to your hotel in a comfortable Mercedes.</p>
-      <p>Whether you are heading to Heraklion city, Hersonissos, Rethymno, or anywhere else on the island, a pre-booked taxi is the easiest way to start your holiday.</p>
+      <p>Whether you are heading to Heraklion city, Hersonissos, Rethymno, or anywhere else on <a href="https://www.incrediblecrete.gr/" target="_blank" rel="noopener noreferrer">the island</a>, a pre-booked taxi is the easiest way to start your holiday.</p>
       <p><a href="/booktaxionline/" class="text-gold font-semibold hover:underline">Book your airport transfer online</a> and get your confirmed fixed price before you travel.</p>
     </div>
 

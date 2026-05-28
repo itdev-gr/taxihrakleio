@@ -15,9 +15,9 @@ const breadcrumbJsonLd = {
 const touristTripJsonLd = {
   "@context": "https://schema.org",
   "@type": "TouristTrip",
-  "name": "Taste of Heraklion — Private Taxi Tour",
-  "description": "Explore Heraklion with a private taxi tour. Visit Knossos Palace, Morosini Fountain, historic churches, and Venetian landmarks.",
-  "touristType": { "@type": "Audience", "audienceType": "Cultural tourists" },
+  "name": "Taste of Heraklion — Private Culinary & Cultural Taxi Tour",
+  "description": "A private taxi tour combining Heraklion's culinary delights with its historic landmarks. Visit the Central Market, taste traditional Cretan dishes like dakos and kalitsounia, sample local wines and olive oil, and explore iconic sites including Knossos Palace and Venetian fountains.",
+  "touristType": { "@type": "Audience", "audienceType": "Food and cultural tourists" },
   "image": `${siteUrl}/images/knossos.avif`,
   "provider": { "@id": "https://www.lptaxiheraklio.com/#business" },
   "url": `${siteUrl}/taste-of-heraklion/`
@@ -26,7 +26,7 @@ const touristTripJsonLd = {
 const jsonLd = [breadcrumbJsonLd, touristTripJsonLd];
 ---
 
-<Layout title="Taste of Heraklion Tour | Private Taxi Tour | LP Taxi" description="Explore Heraklion with a private taxi tour. Visit Knossos Palace, Morosini Fountain, historic churches, and Venetian landmarks." jsonLd={jsonLd}>
+<Layout title="Taste of Heraklion Tour | Culinary & Cultural Private Taxi Tour | LP Taxi" description="Private taxi tour through Heraklion combining authentic Cretan cuisine, wine tasting, olive oil experiences, and iconic landmarks like Knossos Palace, the Central Market, and Venetian fountains." jsonLd={jsonLd}>
   <!-- Page Header -->
   <section class="relative pt-32 pb-20 bg-navy overflow-hidden">
     <div class="absolute inset-0 opacity-10">
@@ -36,7 +36,7 @@ const jsonLd = [breadcrumbJsonLd, touristTripJsonLd];
       <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.header.tag">Food & Wine Experience</span>
       <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-3 mb-6" data-i18n="taste.header.title">Taste of Heraklion</h1>
       <p class="text-gray-400 text-lg max-w-2xl mx-auto" data-i18n="taste.header.subtitle">
-        A unique culinary journey through the Cretan countryside. Discover authentic flavors, ancient wineries, and traditional villages.
+        A unique culinary and cultural journey through Heraklion. Savor traditional Cretan dishes, visit the historic Central Market, taste local wines and olive oil, and explore iconic landmarks along the way.
       </p>
     </div>
   </section>
@@ -46,7 +46,7 @@ const jsonLd = [breadcrumbJsonLd, touristTripJsonLd];
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.carousel.tag">The Experience</span>
-        <h2 class="font-display text-4xl sm:text-5xl font-bold text-navy mt-3 mb-6" data-i18n="taste.carousel.title">Explore the Highlights</h2>
+        <h2 class="font-display text-4xl sm:text-5xl font-bold text-navy mt-3 mb-6" data-i18n="taste.carousel.title">Food, Wine & Culture</h2>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -76,16 +76,157 @@ const jsonLd = [breadcrumbJsonLd, touristTripJsonLd];
 
         <!-- Text content -->
         <div>
-          <span id="carousel-tag" class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.knossos.tag">Historical Excursion</span>
-          <h3 id="carousel-title" class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="taste.knossos.title">Knossos Palace</h3>
-          <p id="carousel-text1" class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="taste.knossos.text1"></p>
-          <p id="carousel-text2" class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.knossos.text2"></p>
+          <span id="carousel-tag" class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.market.tag">Culinary Discovery</span>
+          <h3 id="carousel-title" class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="taste.market.title">Heraklion Central Market</h3>
+          <p id="carousel-text1" class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="taste.market.text1"></p>
+          <p id="carousel-text2" class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.market.text2"></p>
 
           <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
             Book This Tour
           </a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Central Market -->
+  <section class="py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.market.tag">Culinary Discovery</span>
+          <h2 class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="taste.market.title">Heraklion Central Market</h2>
+          <p class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="taste.market.text1">
+            Our culinary journey begins at the legendary 1866 Market, also known as the Central Market of Heraklion. This bustling open-air market stretches along Odos 1866 and has been the gastronomic heart of the city for over a century. Stalls overflow with aromatic herbs, dried fruits, local honey, graviera cheese, and barrels of briny olives.
+          </p>
+          <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.market.text2">
+            Wander through narrow lanes where vendors offer tastings of fresh Cretan cheese, rusk bread for dakos, and jars of thyme honey. This is where locals shop for their daily ingredients, and the perfect place to pick up authentic Cretan products to bring home. Your driver will drop you right at the entrance and wait while you explore at your own pace.
+          </p>
+          <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+            Book This Tour
+          </a>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-navy to-navy-light">
+            <div class="absolute inset-0 bg-[url('/images/knossos.avif')] bg-cover bg-center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Traditional Cretan Cuisine -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-navy to-navy-light">
+            <div class="absolute inset-0 bg-[url('/images/Morozini_Fontein_Heraklion_edited.avif')] bg-cover bg-center"></div>
+          </div>
+        </div>
+        <div>
+          <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.cuisine.tag">Traditional Flavors</span>
+          <h2 class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="taste.cuisine.title">Cretan Cuisine Stops</h2>
+          <p class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="taste.cuisine.text1">
+            Cretan cuisine is celebrated worldwide as one of the healthiest and most flavorful Mediterranean diets. On this tour, we stop at hand-picked tavernas and eateries where you can taste authentic dishes prepared with recipes passed down through generations. Try the iconic dakos, a barley rusk topped with ripe tomatoes, mizithra cheese, and extra-virgin olive oil. Sample kalitsounia, delicate pastries filled with sweet mizithra and fresh herbs.
+          </p>
+          <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.cuisine.text2">
+            For the adventurous palate, Cretan hohlioi (snails) cooked in rosemary and vinegar are a local delicacy not to be missed. Every meal is accompanied by freshly baked bread and often concludes with a shot of tsikoudia (raki), the fiery Cretan spirit distilled from grape pomace. These are not tourist restaurants but genuine family-run kitchens where Cretan hospitality shines.
+          </p>
+          <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+            Book This Tour
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wine Tasting -->
+  <section class="py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.wine.tag">Wine Tasting</span>
+          <h2 class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="taste.wine.title">Cretan Wine Varieties</h2>
+          <p class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="taste.wine.text1">
+            Crete has been producing wine for over 4,000 years, making it one of the oldest wine regions in Europe. On this tour, we visit local wineries in the Heraklion countryside where you can taste indigenous grape varieties that thrive nowhere else in the world. Discover Vidiano, an aromatic white wine with citrus and stone-fruit notes that has become the flagship of modern Cretan winemaking.
+          </p>
+          <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.wine.text2">
+            Sample Kotsifali, a soft red grape often blended with the deeper Mandilari to create full-bodied reds with character. Taste Liatiko, one of the oldest cultivated varieties in Greece, producing elegant reds and sweet wines with aromas of dried fruit and spice. Each tasting is guided by winemakers who share the stories behind their vines, their terroir, and the ancient traditions that shape every bottle.
+          </p>
+          <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+            Book This Tour
+          </a>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-navy to-navy-light">
+            <div class="absolute inset-0 bg-[url('/images/LRM_EXPORT_19584388799415_20190127_204940514_edited.avif')] bg-cover bg-center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Olive Oil Tasting -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-navy to-navy-light">
+            <div class="absolute inset-0 bg-[url('/images/Priuli_fountain_at_Heraklion_edited.avif')] bg-cover bg-center"></div>
+          </div>
+        </div>
+        <div>
+          <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.oliveoil.tag">Liquid Gold</span>
+          <h2 class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="taste.oliveoil.title">Olive Oil Tasting</h2>
+          <p class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="taste.oliveoil.text1">
+            Crete produces some of the finest extra-virgin olive oil in the Mediterranean, and the Heraklion region is home to millions of olive trees, many of them centuries old. We visit a traditional olive press where you learn how olives are harvested, cold-pressed, and bottled. You will taste different grades and varieties of olive oil, from the peppery Koroneiki to milder blends, and discover how to distinguish quality by color, aroma, and finish.
+          </p>
+          <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.oliveoil.text2">
+            Olive oil is the cornerstone of the Cretan diet and has been linked to the island's famous longevity. Locals drizzle it generously on salads, bread, grilled fish, and even desserts. At the tasting, you will also try olive-based spreads, tapenades, and olive oil soap, all produced on-site. It is a sensory experience that reveals why Cretans call their olive oil "liquid gold."
+          </p>
+          <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+            Book This Tour
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Traditional Bakeries -->
+  <section class="py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.bakery.tag">Sweet Traditions</span>
+          <h2 class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="taste.bakery.title">Bakeries & Pastry Shops</h2>
+          <p class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="taste.bakery.text1">
+            No culinary tour of Heraklion is complete without a visit to the city's beloved bakeries and pastry shops. Cretan baking traditions run deep, from the rustic paximadi (twice-baked barley rusks) that form the base of dakos, to bougatsa, a warm custard-filled phyllo pastry that is a breakfast staple across the city. We stop at a family-run bakery where bougatsa is prepared fresh each morning and dusted with cinnamon and powdered sugar.
+          </p>
+          <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.bakery.text2">
+            You will also discover xerotigana, crispy spiral pastries drizzled with honey and sesame seeds, traditionally served at Cretan weddings and celebrations. Other specialties include lychnarakia, sweet cheese pastries shaped like tiny lanterns, and amygdalota, almond cookies made with local almonds and rose water. These treats offer a sweet window into the rich culinary heritage of the island.
+          </p>
+          <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+            Book This Tour
+          </a>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-navy to-navy-light">
+            <div class="absolute inset-0 bg-[url('/images/nikos_kazatzakis_tomb.avif')] bg-cover bg-center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cultural Landmarks Intro -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="taste.landmarks.tag">Culture Between Courses</span>
+      <h2 class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="taste.landmarks.title">Historic Stops Along the Way</h2>
+      <p class="text-gray-600 text-lg leading-relaxed" data-i18n="taste.landmarks.subtitle">
+        Between culinary stops, your driver takes you to Heraklion's most iconic cultural landmarks. This is a tour that feeds both the body and the soul, weaving together the flavors and the history of this ancient city.
+      </p>
     </div>
   </section>
 
@@ -249,7 +390,7 @@ const jsonLd = [breadcrumbJsonLd, touristTripJsonLd];
   <section class="py-20 bg-gold">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-6" data-i18n="taste.cta.title">Ready to Taste Crete?</h2>
-      <p class="text-navy/70 text-lg mb-8" data-i18n="taste.cta.subtitle">Book the Taste of Heraklion tour and discover authentic Cretan flavors.</p>
+      <p class="text-navy/70 text-lg mb-8" data-i18n="taste.cta.subtitle">Book the Taste of Heraklion tour and discover authentic Cretan flavors paired with unforgettable cultural landmarks.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-8 py-4 rounded-xl transition-all text-lg">
           <span data-i18n="taste.cta.bookBtn">Book This Tour</span>
@@ -266,45 +407,59 @@ const jsonLd = [breadcrumbJsonLd, touristTripJsonLd];
   const tours = [
     {
       image: '/images/knossos.avif',
+      tag: 'Culinary Discovery',
+      title: 'Heraklion Central Market',
+      text1: 'Our culinary journey begins at the legendary 1866 Market, also known as the Central Market of Heraklion. This bustling open-air market stretches along Odos 1866 and has been the gastronomic heart of the city for over a century. Stalls overflow with aromatic herbs, dried fruits, local honey, graviera cheese, and barrels of briny olives.',
+      text2: 'Wander through narrow lanes where vendors offer tastings of fresh Cretan cheese, rusk bread for dakos, and jars of thyme honey. This is where locals shop for their daily ingredients, and the perfect place to pick up authentic Cretan products to bring home.',
+    },
+    {
+      image: '/images/Morozini_Fontein_Heraklion_edited.avif',
+      tag: 'Traditional Flavors',
+      title: 'Cretan Cuisine Stops',
+      text1: 'Cretan cuisine is celebrated worldwide as one of the healthiest and most flavorful Mediterranean diets. Try the iconic dakos, a barley rusk topped with ripe tomatoes, mizithra cheese, and extra-virgin olive oil. Sample kalitsounia, delicate pastries filled with sweet mizithra and fresh herbs.',
+      text2: 'For the adventurous palate, Cretan hohlioi (snails) cooked in rosemary and vinegar are a local delicacy not to be missed. Every meal is accompanied by freshly baked bread and often concludes with a shot of tsikoudia (raki), the fiery Cretan spirit.',
+    },
+    {
+      image: '/images/LRM_EXPORT_19584388799415_20190127_204940514_edited.avif',
+      tag: 'Wine Tasting',
+      title: 'Cretan Wine Varieties',
+      text1: 'Crete has been producing wine for over 4,000 years. We visit local wineries where you can taste indigenous grape varieties. Discover Vidiano, an aromatic white wine with citrus and stone-fruit notes that has become the flagship of modern Cretan winemaking.',
+      text2: 'Sample Kotsifali, a soft red grape often blended with the deeper Mandilari. Taste Liatiko, one of the oldest cultivated varieties in Greece, producing elegant reds and sweet wines with aromas of dried fruit and spice.',
+    },
+    {
+      image: '/images/Priuli_fountain_at_Heraklion_edited.avif',
+      tag: 'Liquid Gold',
+      title: 'Olive Oil Tasting',
+      text1: 'Crete produces some of the finest extra-virgin olive oil in the Mediterranean. We visit a traditional olive press where you learn how olives are harvested, cold-pressed, and bottled. Taste different grades and varieties, from the peppery Koroneiki to milder blends.',
+      text2: 'Olive oil is the cornerstone of the Cretan diet and has been linked to the island\'s famous longevity. At the tasting, you will also try olive-based spreads, tapenades, and olive oil soap, all produced on-site.',
+    },
+    {
+      image: '/images/nikos_kazatzakis_tomb.avif',
+      tag: 'Sweet Traditions',
+      title: 'Bakeries & Pastry Shops',
+      text1: 'No culinary tour is complete without visiting Heraklion\'s beloved bakeries. Try bougatsa, a warm custard-filled phyllo pastry that is a breakfast staple, prepared fresh each morning and dusted with cinnamon and powdered sugar.',
+      text2: 'Discover xerotigana, crispy spiral pastries drizzled with honey and sesame seeds. Other specialties include lychnarakia, sweet cheese pastries shaped like tiny lanterns, and amygdalota, almond cookies made with rose water.',
+    },
+    {
+      image: '/images/knossos.avif',
       tag: 'Historical Excursion',
       title: 'Knossos Palace',
       text1: 'Step back in time and explore the legendary Palace of Knossos, the heart of the ancient Minoan civilization and Europe\'s oldest city. This magnificent archaeological site, dating back over 4,000 years, was once the ceremonial and political center of the Minoan empire.',
-      text2: 'Walk through the grand halls where King Minos once ruled, marvel at the vivid frescoes that have survived millennia, and discover the mythical labyrinth said to have housed the Minotaur. Our knowledgeable drivers will take you on a comfortable ride to this UNESCO-recognized site, just a short drive from Heraklion city center.',
+      text2: 'Walk through the grand halls where King Minos once ruled, marvel at the vivid frescoes that have survived millennia, and discover the mythical labyrinth said to have housed the Minotaur.',
     },
     {
       image: '/images/Morozini_Fontein_Heraklion_edited.avif',
       tag: 'Venetian Heritage',
       title: 'Morosini Fountain',
       text1: 'Standing proudly at the heart of Heraklion\'s Lions Square, the Morosini Fountain is one of the city\'s most iconic landmarks. Built in 1628 by the Venetian governor Francesco Morosini, this elegant fountain has been the social center of the city for nearly four centuries.',
-      text2: 'Adorned with intricate reliefs depicting figures from Greek mythology and crowned by four majestic lions, the fountain is a masterpiece of Venetian craftsmanship. Surrounded by cafes and bustling streets, it\'s the perfect starting point to explore the vibrant old town of Heraklion.',
-    },
-    {
-      image: '/images/LRM_EXPORT_19584388799415_20190127_204940514_edited.avif',
-      tag: 'Historical Landmark',
-      title: 'Bembo Fountain',
-      text1: 'The Bembo Fountain, located in Kornarou Square, is the oldest fountain in Heraklion and one of the finest examples of Venetian architecture on the island. Built in 1588 by the Venetian governor Gianmatteo Bembo, it was the first fountain to bring running water to the city.',
-      text2: 'The fountain features a striking headless Roman statue and ornate carved details that reflect the grandeur of Venetian rule in Crete. Nestled in one of Heraklion\'s most charming squares alongside the Ottoman-era Kiosk, it offers a beautiful blend of the city\'s rich multicultural history.',
-    },
-    {
-      image: '/images/Priuli_fountain_at_Heraklion_edited.avif',
-      tag: 'Venetian Treasure',
-      title: 'Priouli Fountain',
-      text1: 'Tucked away in a quiet corner of Heraklion\'s old town, the Priouli Fountain is a hidden gem of Venetian craftsmanship. Built in 1666 by Antonio Priuli, one of the last Venetian governors of Crete, this charming fountain stands as a testament to the island\'s rich Renaissance heritage.',
-      text2: 'With its elegant stone carvings and peaceful atmosphere, the Priouli Fountain offers a tranquil escape from the bustling city streets. It\'s a beautiful reminder of Heraklion\'s layered history, where Venetian, Ottoman, and Greek cultures have left their mark over the centuries.',
-    },
-    {
-      image: '/images/nikos_kazatzakis_tomb.avif',
-      tag: 'Literary Heritage',
-      title: 'The Tomb of Nikos Kazantzakis',
-      text1: 'Perched atop the Martinengo Bastion on the old Venetian walls of Heraklion, the tomb of Nikos Kazantzakis commands a breathtaking panoramic view of the city and the sea. Greece\'s most celebrated author, known worldwide for "Zorba the Greek" and "The Last Temptation of Christ," chose this powerful location as his final resting place.',
-      text2: 'His epitaph, carved in stone, reads: "I hope for nothing. I fear nothing. I am free." These words capture the spirit of the man and the island that inspired him. A visit to this serene and moving site offers a moment of reflection and one of the most stunning views in all of Heraklion.',
+      text2: 'Adorned with intricate reliefs depicting figures from Greek mythology and crowned by four majestic lions, the fountain is a masterpiece of Venetian craftsmanship. Surrounded by cafes and bustling streets, it\'s the perfect starting point to explore the vibrant old town.',
     },
     {
       image: '/images/agios_titos_edited.avif',
       tag: 'Sacred Heritage',
       title: 'The Church of Saint Titos',
       text1: 'The Church of Saint Titos, standing majestically in the heart of Heraklion, is one of the most important religious and historical monuments on the island. Dedicated to the patron saint of Crete, Saint Titos was a disciple of the Apostle Paul and the first bishop of the island.',
-      text2: 'Originally built in the 10th century during the Byzantine era, the church has been transformed through centuries of Venetian and Ottoman rule, giving it a unique architectural character. Inside, it houses the sacred relic of the skull of Saint Titos, returned to Crete in 1966 after centuries in Venice.',
+      text2: 'Originally built in the 10th century during the Byzantine era, the church has been transformed through centuries of Venetian and Ottoman rule, giving it a unique architectural character.',
     },
   ];
 
