@@ -5,15 +5,29 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "TaxiService",
+      "@type": ["LocalBusiness", "TaxiService"],
+      "@id": "https://www.lptaxiheraklio.com/#business",
       "name": "LP Taxi Heraklion",
       "url": "https://www.lptaxiheraklio.com",
       "telephone": "+306943551122",
       "email": "lptaxiheraklion@gmail.com",
       "description": "Premium taxi service in Heraklion, Crete. Airport transfers, hotel pickups, and private tours across Crete.",
+      "priceRange": "$$",
+      "image": "https://www.lptaxiheraklio.com/images/DSC_7943.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Heraklion",
+        "addressRegion": "Crete",
+        "addressCountry": "GR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.3387,
+        "longitude": 25.1442
+      },
       "areaServed": {
         "@type": "Place",
-        "name": "Heraklion, Crete, Greece"
+        "name": "Crete, Greece"
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
@@ -23,19 +37,11 @@ const jsonLd = {
       }
     },
     {
-      "@type": "LocalBusiness",
+      "@type": "WebSite",
+      "@id": "https://www.lptaxiheraklio.com/#website",
       "name": "LP Taxi Heraklion",
       "url": "https://www.lptaxiheraklio.com",
-      "telephone": "+306943551122",
-      "email": "lptaxiheraklion@gmail.com",
-      "priceRange": "$$",
-      "image": "https://www.lptaxiheraklio.com/images/DSC_7943.jpg",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Heraklion",
-        "addressRegion": "Crete",
-        "addressCountry": "GR"
-      }
+      "publisher": { "@id": "https://www.lptaxiheraklio.com/#business" }
     }
   ]
 };
