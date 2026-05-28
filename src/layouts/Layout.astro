@@ -7,10 +7,13 @@ interface Props {
   title: string;
   description?: string;
   ogImage?: string;
+  ogType?: string;
+  noindex?: boolean;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  articleMeta?: { published: string; author: string };
 }
 
-const { title, description = 'LP Taxi Heraklion - Flexible, simple and efficient taxi service in Heraklion, Crete. Safe luxurious rides, airport transfers, and custom tours.', ogImage, jsonLd } = Astro.props;
+const { title, description = 'Taxi Heraklion — fixed-price airport transfers, hotel pickups, and private tours across Crete. Available 24/7.', ogImage, ogType = 'website', noindex = false, jsonLd, articleMeta } = Astro.props;
 
 const siteUrl = 'https://www.lptaxiheraklio.com';
 const canonicalURL = new URL(Astro.url.pathname, siteUrl).href;
@@ -24,16 +27,26 @@ const ogImageURL = ogImage ? new URL(ogImage, siteUrl).href : `${siteUrl}/images
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
     <link rel="canonical" href={canonicalURL} />
+    <link rel="alternate" hreflang="en" href={canonicalURL} />
+    <link rel="alternate" hreflang="x-default" href={canonicalURL} />
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImageURL} />
     <meta property="og:site_name" content="LP Taxi Heraklion" />
     <meta property="og:locale" content="en_US" />
+
+    {articleMeta && (
+      <>
+        <meta property="article:published_time" content={articleMeta.published} />
+        <meta property="article:author" content={articleMeta.author} />
+      </>
+    )}
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />

@@ -1,6 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+const siteUrl = 'https://www.lptaxiheraklio.com';
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": `${siteUrl}/` },
+    { "@type": "ListItem", "position": 2, "name": "FAQ", "item": `${siteUrl}/faq/` }
+  ]
+};
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -65,7 +76,7 @@ const faqJsonLd = {
 };
 ---
 
-<Layout title="FAQ | LP Taxi Heraklion - Frequently Asked Questions" description="Answers to common questions about taxi services in Heraklion, Crete. Airport fares, booking, availability, safety, and tours." jsonLd={faqJsonLd}>
+<Layout title="FAQ | Taxi Heraklion - LP Taxi" description="Answers to common questions about taxi services in Heraklion, Crete. Airport fares, booking, availability, safety, and tours." jsonLd={[breadcrumbJsonLd, faqJsonLd]}>
   <!-- Page Header -->
   <section class="relative pt-32 pb-20 bg-navy overflow-hidden">
     <div class="absolute inset-0 opacity-10">

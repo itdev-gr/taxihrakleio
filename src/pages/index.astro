@@ -11,13 +11,14 @@ const jsonLd = {
       "url": "https://www.lptaxiheraklio.com",
       "telephone": "+306943551122",
       "email": "lptaxiheraklion@gmail.com",
-      "description": "Premium taxi service in Heraklion, Crete. Airport transfers, hotel pickups, and private tours across Crete.",
+      "description": "Taxi Heraklion — fixed-price airport transfers, hotel pickups, and private tours across Crete. 24/7 service.",
       "priceRange": "$$",
       "image": "https://www.lptaxiheraklio.com/images/DSC_7943.jpg",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Heraklion",
         "addressRegion": "Crete",
+        "postalCode": "71201",
         "addressCountry": "GR"
       },
       "geo": {
@@ -34,7 +35,10 @@ const jsonLd = {
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
         "opens": "00:00",
         "closes": "23:59"
-      }
+      },
+      "sameAs": [],
+      "paymentAccepted": "Cash, Credit Card",
+      "currenciesAccepted": "EUR"
     },
     {
       "@type": "WebSite",
@@ -47,7 +51,7 @@ const jsonLd = {
 };
 ---
 
-<Layout title="LP Taxi Heraklion | Premium Taxi Service in Crete" description="Book a premium taxi in Heraklion, Crete. Airport transfers, hotel pickups, and private tours. Available 24/7 with fixed prices." jsonLd={jsonLd}>
+<Layout title="Taxi Heraklion - Airport Transfers & Tours in Crete | LP Taxi" description="Book your taxi in Heraklion. Fixed-price airport transfers, hotel pickups, and private tours across Crete. Available 24/7. Call +30 694 355 1122." jsonLd={jsonLd}>
   <!-- Hero Section -->
   <section class="relative min-h-[102vh] flex items-center justify-center overflow-hidden">
     <!-- Background Video -->
@@ -65,8 +69,8 @@ const jsonLd = {
       </div>
 
       <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-        <span data-i18n="hero.title1">Your Premium Taxi</span><br />
-        <span class="text-gold" data-i18n="hero.title2">Service in Heraklion</span>
+        <span data-i18n="hero.title1">Taxi Heraklion</span><br />
+        <span class="text-gold" data-i18n="hero.title2">Airport Transfers & Tours</span>
       </h1>
 
       <p class="text-gray-300 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed" data-i18n="hero.subtitle">

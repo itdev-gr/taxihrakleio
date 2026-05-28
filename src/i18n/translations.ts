@@ -28,8 +28,8 @@ export const translations: Record<string, Record<string, string>> = {
 
     // HOME PAGE - HERO
     "hero.badge": "Available 24/7 — Heraklion, Crete",
-    "hero.title1": "Your Premium Taxi",
-    "hero.title2": "Service in Heraklion",
+    "hero.title1": "Taxi Heraklion",
+    "hero.title2": "Airport Transfers & Tours",
     "hero.subtitle": "Flexible, simple and efficient. Enjoy safe luxurious rides with professional drivers across Crete. Airport transfers, hotel pickups, and custom tours.",
     "hero.bookBtn": "Book Your Ride",
     "hero.callBtn": "Call Now",
@@ -417,8 +417,8 @@ export const translations: Record<string, Record<string, string>> = {
 
     // HOME PAGE - HERO
     "hero.badge": "Διαθέσιμοι 24/7 — Ηράκλειο, Κρήτη",
-    "hero.title1": "Η Premium Υπηρεσία",
-    "hero.title2": "Ταξί στο Ηράκλειο",
+    "hero.title1": "Ταξί Ηράκλειο",
+    "hero.title2": "Μεταφορές Αεροδρομίου & Ξεναγήσεις",
     "hero.subtitle": "Ευέλικτη, απλή και αποτελεσματική. Απολαύστε ασφαλείς πολυτελείς μετακινήσεις με επαγγελματίες οδηγούς σε όλη την Κρήτη. Μεταφορές αεροδρομίου, παραλαβές ξενοδοχείων και προσαρμοσμένες περιηγήσεις.",
     "hero.bookBtn": "Κλείστε Μεταφορά",
     "hero.callBtn": "Καλέστε Τώρα",

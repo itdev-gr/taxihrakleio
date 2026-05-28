@@ -38,30 +38,39 @@ const posts = [
   },
 ];
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": `${siteUrl}/` },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": `${siteUrl}/blog/` }
+  ]
+};
+
 const blogJsonLd = {
   "@context": "https://schema.org",
   "@type": "Blog",
   "name": "LP Taxi Heraklion Blog",
   "description": "Travel tips, routes, and tour guides for visitors to Heraklion and Crete.",
-  "url": `${siteUrl}/blog`,
+  "url": `${siteUrl}/blog/`,
   "publisher": {
     "@type": "Organization",
     "name": "LP Taxi Heraklion",
-    "url": siteUrl,
+    "url": `${siteUrl}/`,
   },
   "blogPost": posts.map((p) => ({
     "@type": "BlogPosting",
     "headline": p.title,
-    "url": `${siteUrl}/blog/${p.slug}`,
+    "url": `${siteUrl}/blog/${p.slug}/`,
     "image": `${siteUrl}${p.image}`,
   })),
 };
 ---
 
 <Layout
-  title="Blog | LP Taxi Heraklion - Travel Tips, Routes & Tour Guides"
+  title="Blog | Taxi Heraklion - LP Taxi"
   description="Travel tips, taxi routes, airport transfer guides, and private tour ideas for Heraklion and Crete from the LP Taxi team."
-  jsonLd={blogJsonLd}
+  jsonLd={[breadcrumbJsonLd, blogJsonLd]}
 >
   <!-- Page Header -->
   <section class="relative pt-32 pb-20 bg-navy overflow-hidden">

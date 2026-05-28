@@ -7,7 +7,15 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.lptaxiheraklio.com',
-  integrations: [sitemap()],
+  trailingSlash: 'always',
+  integrations: [
+    sitemap({
+      serialize(item) {
+        item.lastmod = new Date().toISOString().split('T')[0];
+        return item;
+      },
+    }),
+  ],
   vite: {
     plugins: [tailwindcss()],
     build: {
