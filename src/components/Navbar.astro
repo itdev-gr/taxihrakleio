@@ -3,11 +3,11 @@ const currentPath = Astro.url.pathname;
 
 const navLinks = [
   { href: '/', label: 'Home', i18nKey: 'nav.home' },
-  { href: '/aboutus', label: 'Who We Are', i18nKey: 'nav.about' },
-  { href: '/taste-of-heraklion', label: 'Taste of Heraklion', i18nKey: 'nav.taste' },
-  { href: '/crete-cruise', label: 'Crete Cruise', i18nKey: 'nav.cruise' },
-  { href: '/blog', label: 'Blog', i18nKey: 'nav.blog' },
-  { href: '/booktaxionline', label: 'Book Now', i18nKey: 'nav.book' },
+  { href: '/aboutus/', label: 'Who We Are', i18nKey: 'nav.about' },
+  { href: '/taste-of-heraklion/', label: 'Taste of Heraklion', i18nKey: 'nav.taste' },
+  { href: '/crete-cruise/', label: 'Crete Cruise', i18nKey: 'nav.cruise' },
+  { href: '/blog/', label: 'Blog', i18nKey: 'nav.blog' },
+  { href: '/booktaxionline/', label: 'Book Now', i18nKey: 'nav.book' },
 ];
 ---
 
@@ -28,7 +28,7 @@ const navLinks = [
               'px-5 py-2.5 rounded-lg text-base font-medium transition-all duration-200',
               link.label === 'Book Now'
                 ? 'bg-gold text-navy hover:bg-gold-light ml-2'
-                : currentPath === link.href
+                : currentPath === link.href || currentPath === link.href.slice(0, -1)
                   ? 'text-gold bg-white/5'
                   : 'text-gray-300 hover:text-white hover:bg-white/5',
             ]}
@@ -86,7 +86,7 @@ const navLinks = [
             'block px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200',
             link.label === 'Book Now'
               ? 'bg-gold text-navy text-center mt-3'
-              : currentPath === link.href
+              : currentPath === link.href || currentPath === link.href.slice(0, -1)
                 ? 'text-gold bg-white/5'
                 : 'text-gray-300 hover:text-white hover:bg-white/5',
           ]}

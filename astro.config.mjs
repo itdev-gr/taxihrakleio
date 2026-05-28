@@ -10,6 +10,9 @@ export default defineConfig({
   trailingSlash: 'always',
   integrations: [
     sitemap({
+      filter(page) {
+        return !page.includes('privacy-policy') && !page.includes('tell-us-your-opinion');
+      },
       serialize(item) {
         item.lastmod = new Date().toISOString().split('T')[0];
         return item;

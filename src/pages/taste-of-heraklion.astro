@@ -17,12 +17,9 @@ const touristTripJsonLd = {
   "@type": "TouristTrip",
   "name": "Taste of Heraklion — Private Taxi Tour",
   "description": "Explore Heraklion with a private taxi tour. Visit Knossos Palace, Morosini Fountain, historic churches, and Venetian landmarks.",
-  "touristType": "Cultural",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "LP Taxi Heraklion",
-    "url": `${siteUrl}/`
-  },
+  "touristType": { "@type": "Audience", "audienceType": "Cultural tourists" },
+  "image": `${siteUrl}/images/knossos.avif`,
+  "provider": { "@id": "https://www.lptaxiheraklio.com/#business" },
   "url": `${siteUrl}/taste-of-heraklion/`
 };
 
@@ -84,7 +81,7 @@ const jsonLd = [breadcrumbJsonLd, touristTripJsonLd];
           <p id="carousel-text1" class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="taste.knossos.text1"></p>
           <p id="carousel-text2" class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.knossos.text2"></p>
 
-          <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+          <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
             Book This Tour
           </a>
         </div>
@@ -105,7 +102,7 @@ const jsonLd = [breadcrumbJsonLd, touristTripJsonLd];
           <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.knossos.text2">
             Walk through the grand halls where King Minos once ruled, marvel at the vivid frescoes that have survived millennia, and discover the mythical labyrinth said to have housed the Minotaur. Our knowledgeable drivers will take you on a comfortable ride to this UNESCO-recognized site, just a short drive from Heraklion city center.
           </p>
-          <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+          <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
             Book This Tour
           </a>
         </div>
@@ -136,7 +133,7 @@ const jsonLd = [breadcrumbJsonLd, touristTripJsonLd];
           <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.morosini.text2">
             Adorned with intricate reliefs depicting figures from Greek mythology and crowned by four majestic lions, the fountain is a masterpiece of Venetian craftsmanship. Surrounded by cafes and bustling streets, it's the perfect starting point to explore the vibrant old town of Heraklion. Let us take you there in comfort and style.
           </p>
-          <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+          <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
             Book This Tour
           </a>
         </div>
@@ -157,7 +154,7 @@ const jsonLd = [breadcrumbJsonLd, touristTripJsonLd];
           <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.bembo.text2">
             The fountain features a striking headless Roman statue and ornate carved details that reflect the grandeur of Venetian rule in Crete. Nestled in one of Heraklion's most charming squares alongside the Ottoman-era Kiosk, it offers a beautiful blend of the city's rich multicultural history. A must-see stop on any tour of the old town.
           </p>
-          <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+          <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
             Book This Tour
           </a>
         </div>
@@ -188,7 +185,7 @@ const jsonLd = [breadcrumbJsonLd, touristTripJsonLd];
           <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.priouli.text2">
             With its elegant stone carvings and peaceful atmosphere, the Priouli Fountain offers a tranquil escape from the bustling city streets. It's a beautiful reminder of Heraklion's layered history, where Venetian, Ottoman, and Greek cultures have left their mark over the centuries. Let us guide you through these timeless landmarks.
           </p>
-          <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+          <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
             Book This Tour
           </a>
         </div>
@@ -209,7 +206,7 @@ const jsonLd = [breadcrumbJsonLd, touristTripJsonLd];
           <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.kazantzakis.text2">
             His epitaph, carved in stone, reads: "I hope for nothing. I fear nothing. I am free." These words capture the spirit of the man and the island that inspired him. A visit to this serene and moving site offers a moment of reflection and one of the most stunning views in all of Heraklion — a truly unforgettable stop on any tour.
           </p>
-          <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+          <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
             Book This Tour
           </a>
         </div>
@@ -240,7 +237,7 @@ const jsonLd = [breadcrumbJsonLd, touristTripJsonLd];
           <p class="text-gray-600 mb-8 leading-relaxed" data-i18n="taste.titos.text2">
             Originally built in the 10th century during the Byzantine era, the church has been transformed through centuries of Venetian and Ottoman rule, giving it a unique architectural character. Inside, it houses the sacred relic of the skull of Saint Titos, returned to Crete in 1966 after centuries in Venice. A visit here is a journey through faith, history, and the enduring spirit of Crete.
           </p>
-          <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
+          <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-6 py-3 rounded-xl transition-all" data-i18n="taste.bookTour">
             Book This Tour
           </a>
         </div>
@@ -254,7 +251,7 @@ const jsonLd = [breadcrumbJsonLd, touristTripJsonLd];
       <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-6" data-i18n="taste.cta.title">Ready to Taste Crete?</h2>
       <p class="text-navy/70 text-lg mb-8" data-i18n="taste.cta.subtitle">Book the Taste of Heraklion tour and discover authentic Cretan flavors.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-8 py-4 rounded-xl transition-all text-lg">
+        <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-8 py-4 rounded-xl transition-all text-lg">
           <span data-i18n="taste.cta.bookBtn">Book This Tour</span>
         </a>
         <a href="tel:+306943551122" class="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 text-navy font-semibold px-8 py-4 rounded-xl transition-all text-lg border-2 border-navy/20">

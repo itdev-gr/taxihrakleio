@@ -23,14 +23,19 @@ const jsonLd = {
   "@type": "BlogPosting",
   "headline": title,
   "description": description,
-  "image": `${siteUrl}${image}`,
+  "image": {
+    "@type": "ImageObject",
+    "url": `${siteUrl}${image}`,
+    "width": 1600,
+    "height": 1066
+  },
   "datePublished": datePublished,
   "dateModified": datePublished,
   "author": { "@type": "Person", "name": "Lampros", "url": `${siteUrl}/aboutus/` },
   "publisher": {
     "@type": "Organization",
     "name": "LP Taxi Heraklion",
-    "logo": { "@type": "ImageObject", "url": `${siteUrl}/images/logo-lp.svg` }
+    "logo": { "@type": "ImageObject", "url": `${siteUrl}/images/logo-lp.png`, "width": 300, "height": 60 }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": `${siteUrl}/blog/${slug}/` }
 };
@@ -43,7 +48,7 @@ const jsonLd = {
       <div class="absolute top-0 right-0 w-96 h-96 bg-gold rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
     </div>
     <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <a href="/blog" class="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors text-sm font-semibold mb-6">
+      <a href="/blog/" class="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors text-sm font-semibold mb-6">
         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
         </svg>
@@ -104,9 +109,9 @@ const jsonLd = {
       <p>For families with children, couples, or anyone who wants to move at their own pace, private is simply better.</p>
 
       <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">The Taste Of Heraklion: A Full Private Tour Experience</h2>
-      <p>LP Taxi Heraklion has designed a dedicated private tour called <a href="/taste-of-heraklion" class="text-gold font-semibold hover:underline">Taste of Heraklion</a> that combines Knossos Palace with the most iconic landmarks of the city. This is not a standard taxi ride. It is a curated experience with a local professional driver who knows every site, every shortcut, and every story worth telling.</p>
+      <p>LP Taxi Heraklion has designed a dedicated private tour called <a href="/taste-of-heraklion/" class="text-gold font-semibold hover:underline">Taste of Heraklion</a> that combines Knossos Palace with the most iconic landmarks of the city. This is not a standard taxi ride. It is a curated experience with a local professional driver who knows every site, every shortcut, and every story worth telling.</p>
       <p>The tour covers Knossos Palace, the Morosini Fountain at Lions Square, the Bembo Fountain, the Priouli Fountain, the Church of Saint Titos, and the Tomb of Nikos Kazantzakis with its panoramic views over the city.</p>
-      <p>If you want to experience Knossos and Heraklion in one organized private day, <a href="/taste-of-heraklion" class="text-gold font-semibold hover:underline">the Taste of Heraklion tour</a> is the most complete option available.</p>
+      <p>If you want to experience Knossos and Heraklion in one organized private day, <a href="/taste-of-heraklion/" class="text-gold font-semibold hover:underline">the Taste of Heraklion tour</a> is the most complete option available.</p>
 
       <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">What A Private Knossos Taxi Tour Looks Like</h2>
       <p>If you prefer to build your own itinerary, a typical half-day with LP Taxi Heraklion might look like this:</p>
@@ -144,8 +149,8 @@ const jsonLd = {
 
       <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">Book Your Private Knossos Tour</h2>
       <p>LP Taxi Heraklion offers private tours to Knossos Palace and across Heraklion, tailored to your schedule. Pickup from your hotel, port, or apartment in a comfortable Mercedes. Fixed price agreed before departure. Driver available to wait and continue to additional stops.</p>
-      <p>For a full day experience combining Knossos with the best of Heraklion, explore the <a href="/taste-of-heraklion" class="text-gold font-semibold hover:underline">Taste of Heraklion</a> tour page.</p>
-      <p>Ready to book? <a href="/booktaxionline" class="text-gold font-semibold hover:underline">Reserve your private tour online</a> or call <a href="tel:+306943551122" class="text-gold font-semibold hover:underline">+30 694 355 1122</a>, available 24 hours a day.</p>
+      <p>For a full day experience combining Knossos with the best of Heraklion, explore the <a href="/taste-of-heraklion/" class="text-gold font-semibold hover:underline">Taste of Heraklion</a> tour page.</p>
+      <p>Ready to book? <a href="/booktaxionline/" class="text-gold font-semibold hover:underline">Reserve your private tour online</a> or call <a href="tel:+306943551122" class="text-gold font-semibold hover:underline">+30 694 355 1122</a>, available 24 hours a day.</p>
     </div>
 
     <!-- Bottom CTA -->
@@ -153,10 +158,10 @@ const jsonLd = {
       <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mb-3" data-i18n="blog.cta.tourTitle">Plan your private Knossos tour</h3>
       <p class="text-gray-300 mb-6" data-i18n="blog.cta.tourSubtitle">A flexible itinerary, a local driver, and a comfortable Mercedes.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/taste-of-heraklion" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-8 py-4 rounded-xl transition-all text-lg shadow-lg shadow-gold/20" data-i18n="blog.cta.tourBtn">
+        <a href="/taste-of-heraklion/" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-8 py-4 rounded-xl transition-all text-lg shadow-lg shadow-gold/20" data-i18n="blog.cta.tourBtn">
           See the Taste of Heraklion Tour
         </a>
-        <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl transition-all text-lg border border-white/20" data-i18n="blog.cta.bookBtn">
+        <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl transition-all text-lg border border-white/20" data-i18n="blog.cta.bookBtn">
           Book Your Ride
         </a>
       </div>

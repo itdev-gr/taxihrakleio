@@ -138,7 +138,15 @@ const blogJsonLd = {
     "@type": "BlogPosting",
     "headline": p.title,
     "url": `${siteUrl}/blog/${p.slug}/`,
-    "image": `${siteUrl}${p.image}`,
+    "image": {
+      "@type": "ImageObject",
+      "url": `${siteUrl}${p.image}`,
+      "width": 1600,
+      "height": 1066
+    },
+    "datePublished": p.date,
+    "author": { "@type": "Person", "name": "Lampros" },
+    "description": p.excerpt,
   })),
 };
 ---
@@ -146,6 +154,7 @@ const blogJsonLd = {
 <Layout
   title="Blog | Taxi Heraklion - LP Taxi"
   description="Travel tips, taxi routes, airport transfer guides, and private tour ideas for Heraklion and Crete from the LP Taxi team."
+  ogType="blog"
   jsonLd={[breadcrumbJsonLd, blogJsonLd]}
 >
   <!-- Page Header -->
@@ -168,7 +177,7 @@ const blogJsonLd = {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {posts.map((post) => (
           <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
-            <a href={`/blog/${post.slug}`} class="block aspect-[16/10] overflow-hidden bg-navy/10">
+            <a href={`/blog/${post.slug}/`} class="block aspect-[16/10] overflow-hidden bg-navy/10">
               <img
                 src={post.image}
                 alt={post.title}
@@ -187,11 +196,11 @@ const blogJsonLd = {
                 <time datetime={post.date}>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
               </div>
               <h2 class="font-display text-2xl font-bold text-navy mb-3 leading-snug">
-                <a href={`/blog/${post.slug}`} class="hover:text-gold transition-colors">{post.title}</a>
+                <a href={`/blog/${post.slug}/`} class="hover:text-gold transition-colors">{post.title}</a>
               </h2>
               <p class="text-gray-600 leading-relaxed mb-6 flex-1">{post.excerpt}</p>
               <a
-                href={`/blog/${post.slug}`}
+                href={`/blog/${post.slug}/`}
                 class="inline-flex items-center gap-2 text-gold font-semibold hover:text-gold-dark transition-colors mt-auto"
               >
                 <span data-i18n="blog.readMore">Read article</span>
@@ -208,7 +217,7 @@ const blogJsonLd = {
       <div class="text-center mt-20">
         <p class="text-gray-600 text-lg mb-6" data-i18n="blog.cta.text">Ready to book your transfer or private tour?</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-8 py-4 rounded-xl transition-all text-lg shadow-lg shadow-gold/20" data-i18n="blog.cta.bookBtn">
+          <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-8 py-4 rounded-xl transition-all text-lg shadow-lg shadow-gold/20" data-i18n="blog.cta.bookBtn">
             Book Your Ride
           </a>
           <a href="tel:+306943551122" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-8 py-4 rounded-xl transition-all text-lg">

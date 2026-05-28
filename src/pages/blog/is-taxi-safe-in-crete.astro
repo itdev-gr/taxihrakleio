@@ -24,14 +24,19 @@ const jsonLd = {
   "@type": "BlogPosting",
   "headline": title,
   "description": description,
-  "image": `${siteUrl}${image}`,
+  "image": {
+    "@type": "ImageObject",
+    "url": `${siteUrl}${image}`,
+    "width": 1600,
+    "height": 1066
+  },
   "datePublished": datePublished,
   "dateModified": datePublished,
   "author": { "@type": "Person", "name": "Lampros", "url": `${siteUrl}/aboutus/` },
   "publisher": {
     "@type": "Organization",
     "name": "LP Taxi Heraklion",
-    "logo": { "@type": "ImageObject", "url": `${siteUrl}/images/logo-lp.svg` }
+    "logo": { "@type": "ImageObject", "url": `${siteUrl}/images/logo-lp.png`, "width": 300, "height": 60 }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": `${siteUrl}/blog/${slug}/` }
 };
@@ -44,7 +49,7 @@ const jsonLd = {
       <div class="absolute top-0 right-0 w-96 h-96 bg-gold rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
     </div>
     <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <a href="/blog" class="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors text-sm font-semibold mb-6">
+      <a href="/blog/" class="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors text-sm font-semibold mb-6">
         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
         </svg>
@@ -98,7 +103,7 @@ const jsonLd = {
       </ul>
 
       <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">Why Pre-Booking Eliminates the Risks</h2>
-      <p>The easiest way to avoid every one of these issues is to pre-book your taxi. When you <a href="/booktaxionline" class="text-gold font-semibold hover:underline">book a transfer online</a> with a licensed service like LP Taxi, your price is agreed before you travel. There is no meter to worry about, no route to monitor, and no awkward negotiation at the end of the ride.</p>
+      <p>The easiest way to avoid every one of these issues is to pre-book your taxi. When you <a href="/booktaxionline/" class="text-gold font-semibold hover:underline">book a transfer online</a> with a licensed service like LP Taxi, your price is agreed before you travel. There is no meter to worry about, no route to monitor, and no awkward negotiation at the end of the ride.</p>
       <p>Pre-booked drivers also have a reputation to protect. They rely on reviews and repeat customers, so they have every incentive to provide a clean car, a professional manner, and an on-time arrival. You will receive a confirmation with your driver's name and contact details, and they will be waiting for you when you land or when you step out of your hotel.</p>
 
       <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">Safety Tips for Solo Female Travelers</h2>
@@ -120,7 +125,7 @@ const jsonLd = {
 
       <h2 class="font-display text-3xl font-bold text-navy mt-12 mb-4">The Bottom Line</h2>
       <p>Taxis in Crete are safe, regulated, and a practical way to travel — especially for airport transfers, port pickups, and day trips to places like Knossos, Elounda, or the south coast beaches. The vast majority of drivers are honest professionals who take pride in welcoming visitors to their island.</p>
-      <p>For complete peace of mind, <a href="/booktaxionline" class="text-gold font-semibold hover:underline">pre-book your transfer</a> and travel with a fixed price, a named driver, and zero uncertainty.</p>
+      <p>For complete peace of mind, <a href="/booktaxionline/" class="text-gold font-semibold hover:underline">pre-book your transfer</a> and travel with a fixed price, a named driver, and zero uncertainty.</p>
     </div>
 
     <!-- Bottom CTA -->
@@ -128,7 +133,7 @@ const jsonLd = {
       <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mb-3" data-i18n="blog.cta.title">Ready to book your transfer?</h3>
       <p class="text-gray-300 mb-6" data-i18n="blog.cta.subtitle">Get a fixed price before you travel — no meter, no surprises.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-8 py-4 rounded-xl transition-all text-lg shadow-lg shadow-gold/20" data-i18n="blog.cta.bookBtn">
+        <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-light text-navy font-semibold px-8 py-4 rounded-xl transition-all text-lg shadow-lg shadow-gold/20" data-i18n="blog.cta.bookBtn">
           Book Your Ride
         </a>
         <a href="tel:+306943551122" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl transition-all text-lg border border-white/20">

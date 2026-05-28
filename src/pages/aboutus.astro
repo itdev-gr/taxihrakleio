@@ -21,7 +21,7 @@ const aboutPageJsonLd = {
     "@type": "Person",
     "name": "Lampros",
     "jobTitle": "Founder & Driver",
-    "worksFor": { "@type": "Organization", "name": "LP Taxi Heraklion", "url": `${siteUrl}/` }
+    "worksFor": { "@id": "https://www.lptaxiheraklio.com/#business" }
   }
 };
 
@@ -51,7 +51,7 @@ const jsonLd = [breadcrumbJsonLd, aboutPageJsonLd];
           <span class="text-gold font-semibold text-sm tracking-widest uppercase" data-i18n="about.story.tag">Our Story</span>
           <h2 class="font-display text-4xl font-bold text-navy mt-3 mb-6" data-i18n="about.story.title">Elevating the Journey, Enriching Lives</h2>
           <p class="text-gray-600 text-lg mb-6 leading-relaxed" data-i18n="about.story.text1">
-            At LP Taxi Service Heraklion, we believe that every journey is an opportunity to elevate the transportation experience for our passengers. As a small taxi company operating in Heraklion, Crete, we are committed to delivering premium service and exceeding customer expectations with every ride.
+            At LP Taxi Heraklion, we believe that every journey is an opportunity to elevate the transportation experience for our passengers. As a small taxi company operating in Heraklion, Crete, we are committed to delivering premium service and exceeding customer expectations with every ride.
           </p>
           <p class="text-gray-600 mb-6 leading-relaxed" data-i18n="about.story.text2">
             We view transportation not just as a means of getting from point A to point B, but as an experience. Whether you're embarking on a scenic tour of Crete's countryside, catching a flight at the airport, or simply commuting to work, we are here to make your journey as enjoyable and memorable as possible.
@@ -156,7 +156,7 @@ const jsonLd = [breadcrumbJsonLd, aboutPageJsonLd];
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-6" data-i18n="about.cta.title">Ready to Experience the Difference?</h2>
       <p class="text-navy/70 text-lg mb-8" data-i18n="about.cta.subtitle">Book your ride today and see why travelers trust LP Taxi Heraklion.</p>
-      <a href="/booktaxionline" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-8 py-4 rounded-xl transition-all text-lg">
+      <a href="/booktaxionline/" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white font-semibold px-8 py-4 rounded-xl transition-all text-lg">
         <span data-i18n="about.cta.btn">Book Your Ride Now</span>
       </a>
     </div>
